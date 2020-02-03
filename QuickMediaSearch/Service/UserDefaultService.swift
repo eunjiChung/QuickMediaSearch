@@ -16,7 +16,7 @@ protocol UserDefaultServiceType {
 
 class UserDefaultService: UserDefaultServiceType {
     /*
-     
+     TODO: Level[2] 아래 동작 검증필요
      */
     func isFavorite() {
     }

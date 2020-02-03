@@ -3,11 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		20E5F5C25271C6747F1C9B7C /* Pods_QuickMediaSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9174EACEF24CF259CCCEFD91 /* Pods_QuickMediaSearch.framework */; };
+		2F95081823E879FF00629639 /* SearchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95081723E879FF00629639 /* SearchOptions.swift */; };
+		2F95081A23E87A9800629639 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95081923E87A9800629639 /* Enviroment.swift */; };
+		2F95081C23E87C2600629639 /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95081B23E87C2600629639 /* MetaData.swift */; };
+		2F95081F23E87D2A00629639 /* KakaoImageResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95081E23E87D2A00629639 /* KakaoImageResponseTests.swift */; };
+		2F95082123E87D3500629639 /* KakaoVclipResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95082023E87D3500629639 /* KakaoVclipResponseTests.swift */; };
+		2F95082523E880DE00629639 /* SearchListPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95082423E880DE00629639 /* SearchListPresent.swift */; };
+		2F95082723E8835000629639 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95082623E8835000629639 /* AppServices.swift */; };
 		2FB97E2723E8572D00CA3350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E2623E8572D00CA3350 /* AppDelegate.swift */; };
 		2FB97E2923E8572D00CA3350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E2823E8572D00CA3350 /* SceneDelegate.swift */; };
 		2FB97E2B23E8572D00CA3350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E2A23E8572D00CA3350 /* ViewController.swift */; };
@@ -23,28 +30,12 @@
 		2FB97E5B23E85B2900CA3350 /* SearchListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5A23E85B2900CA3350 /* SearchListWorker.swift */; };
 		2FB97E5E23E85B4900CA3350 /* KakaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5D23E85B4900CA3350 /* KakaoService.swift */; };
 		2FB97E6023E85B5400CA3350 /* UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5F23E85B5400CA3350 /* UserDefaultService.swift */; };
-		2FB97E7A23E85C5600CA3350 /* page_kakao_vclip_first.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6323E85C5600CA3350 /* page_kakao_vclip_first.json */; };
-		2FB97E7B23E85C5600CA3350 /* page_kakao_image_second.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6423E85C5600CA3350 /* page_kakao_image_second.json */; };
-		2FB97E7C23E85C5600CA3350 /* page_kakao_image_first.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6523E85C5600CA3350 /* page_kakao_image_first.json */; };
-		2FB97E7D23E85C5600CA3350 /* page_naver_image_second.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6623E85C5600CA3350 /* page_naver_image_second.json */; };
-		2FB97E7E23E85C5600CA3350 /* page_naver_image_first.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6723E85C5600CA3350 /* page_naver_image_first.json */; };
-		2FB97E7F23E85C5600CA3350 /* page_kakao_vclip_second.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6823E85C5600CA3350 /* page_kakao_vclip_second.json */; };
 		2FB97E8023E85C5600CA3350 /* ResourcesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E6923E85C5600CA3350 /* ResourcesLoader.swift */; };
-		2FB97E8123E85C5600CA3350 /* sort_naver_image_sim.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6B23E85C5600CA3350 /* sort_naver_image_sim.json */; };
-		2FB97E8223E85C5600CA3350 /* sort_naver_image_date.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6C23E85C5600CA3350 /* sort_naver_image_date.json */; };
-		2FB97E8323E85C5600CA3350 /* sort_kakao_vclip_accuracy.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6D23E85C5600CA3350 /* sort_kakao_vclip_accuracy.json */; };
-		2FB97E8423E85C5600CA3350 /* sort_kakao_vclip_recency.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6E23E85C5600CA3350 /* sort_kakao_vclip_recency.json */; };
-		2FB97E8523E85C5600CA3350 /* sort_kakao_image_recency.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6F23E85C5600CA3350 /* sort_kakao_image_recency.json */; };
-		2FB97E8623E85C5600CA3350 /* sort_kakao_image_accuracy.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7023E85C5600CA3350 /* sort_kakao_image_accuracy.json */; };
-		2FB97E8723E85C5600CA3350 /* category_kakao_image.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7223E85C5600CA3350 /* category_kakao_image.json */; };
-		2FB97E8823E85C5600CA3350 /* category_kakao_vclip.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7323E85C5600CA3350 /* category_kakao_vclip.json */; };
-		2FB97E8923E85C5600CA3350 /* category_naver_image.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7423E85C5600CA3350 /* category_naver_image.json */; };
 		2FB97E8A23E85C5600CA3350 /* kakao_reach_end_error.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7523E85C5600CA3350 /* kakao_reach_end_error.json */; };
-		2FB97E8B23E85C5600CA3350 /* naverResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7723E85C5600CA3350 /* naverResponse.json */; };
 		2FB97E8C23E85C5600CA3350 /* kakaoImageResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7823E85C5600CA3350 /* kakaoImageResponse.json */; };
 		2FB97E8D23E85C5600CA3350 /* kakaoVclipResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7923E85C5600CA3350 /* kakaoVclipResponse.json */; };
-		2FB97E9423E85D6D00CA3350 /* KakaoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9323E85D6D00CA3350 /* KakaoImage.swift */; };
-		2FB97E9623E85D7A00CA3350 /* KakaoVclip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9523E85D7A00CA3350 /* KakaoVclip.swift */; };
+		2FB97E9423E85D6D00CA3350 /* KakaoImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9323E85D6D00CA3350 /* KakaoImageResponse.swift */; };
+		2FB97E9623E85D7A00CA3350 /* KakaoVclipResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9523E85D7A00CA3350 /* KakaoVclipResponse.swift */; };
 		2FB97E9B23E85F0200CA3350 /* MyStoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9723E85F0200CA3350 /* MyStoreRouter.swift */; };
 		2FB97E9C23E85F0200CA3350 /* MyStorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9823E85F0200CA3350 /* MyStorePresenter.swift */; };
 		2FB97E9D23E85F0200CA3350 /* MyStoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9923E85F0200CA3350 /* MyStoreInteractor.swift */; };
@@ -63,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F95081723E879FF00629639 /* SearchOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptions.swift; sourceTree = "<group>"; };
+		2F95081923E87A9800629639 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		2F95081B23E87C2600629639 /* MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
+		2F95081E23E87D2A00629639 /* KakaoImageResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoImageResponseTests.swift; sourceTree = "<group>"; };
+		2F95082023E87D3500629639 /* KakaoVclipResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoVclipResponseTests.swift; sourceTree = "<group>"; };
+		2F95082423E880DE00629639 /* SearchListPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListPresent.swift; sourceTree = "<group>"; };
+		2F95082623E8835000629639 /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
 		2FB97E2323E8572D00CA3350 /* QuickMediaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickMediaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB97E2623E8572D00CA3350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FB97E2823E8572D00CA3350 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,28 +80,12 @@
 		2FB97E5A23E85B2900CA3350 /* SearchListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListWorker.swift; sourceTree = "<group>"; };
 		2FB97E5D23E85B4900CA3350 /* KakaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoService.swift; sourceTree = "<group>"; };
 		2FB97E5F23E85B5400CA3350 /* UserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultService.swift; sourceTree = "<group>"; };
-		2FB97E6323E85C5600CA3350 /* page_kakao_vclip_first.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_kakao_vclip_first.json; sourceTree = "<group>"; };
-		2FB97E6423E85C5600CA3350 /* page_kakao_image_second.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_kakao_image_second.json; sourceTree = "<group>"; };
-		2FB97E6523E85C5600CA3350 /* page_kakao_image_first.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_kakao_image_first.json; sourceTree = "<group>"; };
-		2FB97E6623E85C5600CA3350 /* page_naver_image_second.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_naver_image_second.json; sourceTree = "<group>"; };
-		2FB97E6723E85C5600CA3350 /* page_naver_image_first.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_naver_image_first.json; sourceTree = "<group>"; };
-		2FB97E6823E85C5600CA3350 /* page_kakao_vclip_second.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_kakao_vclip_second.json; sourceTree = "<group>"; };
 		2FB97E6923E85C5600CA3350 /* ResourcesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesLoader.swift; sourceTree = "<group>"; };
-		2FB97E6B23E85C5600CA3350 /* sort_naver_image_sim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_naver_image_sim.json; sourceTree = "<group>"; };
-		2FB97E6C23E85C5600CA3350 /* sort_naver_image_date.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_naver_image_date.json; sourceTree = "<group>"; };
-		2FB97E6D23E85C5600CA3350 /* sort_kakao_vclip_accuracy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_kakao_vclip_accuracy.json; sourceTree = "<group>"; };
-		2FB97E6E23E85C5600CA3350 /* sort_kakao_vclip_recency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_kakao_vclip_recency.json; sourceTree = "<group>"; };
-		2FB97E6F23E85C5600CA3350 /* sort_kakao_image_recency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_kakao_image_recency.json; sourceTree = "<group>"; };
-		2FB97E7023E85C5600CA3350 /* sort_kakao_image_accuracy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_kakao_image_accuracy.json; sourceTree = "<group>"; };
-		2FB97E7223E85C5600CA3350 /* category_kakao_image.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category_kakao_image.json; sourceTree = "<group>"; };
-		2FB97E7323E85C5600CA3350 /* category_kakao_vclip.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category_kakao_vclip.json; sourceTree = "<group>"; };
-		2FB97E7423E85C5600CA3350 /* category_naver_image.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category_naver_image.json; sourceTree = "<group>"; };
 		2FB97E7523E85C5600CA3350 /* kakao_reach_end_error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kakao_reach_end_error.json; sourceTree = "<group>"; };
-		2FB97E7723E85C5600CA3350 /* naverResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = naverResponse.json; sourceTree = "<group>"; };
 		2FB97E7823E85C5600CA3350 /* kakaoImageResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kakaoImageResponse.json; sourceTree = "<group>"; };
 		2FB97E7923E85C5600CA3350 /* kakaoVclipResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kakaoVclipResponse.json; sourceTree = "<group>"; };
-		2FB97E9323E85D6D00CA3350 /* KakaoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoImage.swift; sourceTree = "<group>"; };
-		2FB97E9523E85D7A00CA3350 /* KakaoVclip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoVclip.swift; sourceTree = "<group>"; };
+		2FB97E9323E85D6D00CA3350 /* KakaoImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoImageResponse.swift; sourceTree = "<group>"; };
+		2FB97E9523E85D7A00CA3350 /* KakaoVclipResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoVclipResponse.swift; sourceTree = "<group>"; };
 		2FB97E9723E85F0200CA3350 /* MyStoreRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStoreRouter.swift; sourceTree = "<group>"; };
 		2FB97E9823E85F0200CA3350 /* MyStorePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStorePresenter.swift; sourceTree = "<group>"; };
 		2FB97E9923E85F0200CA3350 /* MyStoreInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStoreInteractor.swift; sourceTree = "<group>"; };
@@ -136,6 +118,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F95081D23E87D1E00629639 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F95081E23E87D2A00629639 /* KakaoImageResponseTests.swift */,
+				2F95082023E87D3500629639 /* KakaoVclipResponseTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2FB97E1A23E8572D00CA3350 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +160,7 @@
 				2FB97E2F23E8572E00CA3350 /* Assets.xcassets */,
 				2FB97E3123E8572E00CA3350 /* LaunchScreen.storyboard */,
 				2FB97E3423E8572E00CA3350 /* Info.plist */,
+				2F95081923E87A9800629639 /* Enviroment.swift */,
 			);
 			path = QuickMediaSearch;
 			sourceTree = "<group>";
@@ -176,7 +168,7 @@
 		2FB97E3C23E8572E00CA3350 /* QuickMediaSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				2FB97E9F23E85F5D00CA3350 /* Service */,
+				2F95081D23E87D1E00629639 /* Model */,
 				2FB97E6123E85C2F00CA3350 /* SUT */,
 				2FB97E5623E85AFE00CA3350 /* Scene */,
 				2FB97E3D23E8572E00CA3350 /* QuickMediaSearchTests.swift */,
@@ -203,6 +195,7 @@
 				2FB97E4F23E85AAE00CA3350 /* SearchListPresenter.swift */,
 				2FB97E5123E85ABF00CA3350 /* SearchListRouter.swift */,
 				2FB97E5A23E85B2900CA3350 /* SearchListWorker.swift */,
+				2F95082423E880DE00629639 /* SearchListPresent.swift */,
 			);
 			path = SearchList;
 			sourceTree = "<group>";
@@ -262,6 +255,7 @@
 			children = (
 				2FB97E5D23E85B4900CA3350 /* KakaoService.swift */,
 				2FB97E5F23E85B5400CA3350 /* UserDefaultService.swift */,
+				2F95082623E8835000629639 /* AppServices.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -269,56 +263,16 @@
 		2FB97E6123E85C2F00CA3350 /* SUT */ = {
 			isa = PBXGroup;
 			children = (
-				2FB97E7123E85C5600CA3350 /* Category */,
-				2FB97E7523E85C5600CA3350 /* kakao_reach_end_error.json */,
-				2FB97E6223E85C5600CA3350 /* Page */,
 				2FB97E6923E85C5600CA3350 /* ResourcesLoader.swift */,
 				2FB97E7623E85C5600CA3350 /* Sample */,
-				2FB97E6A23E85C5600CA3350 /* Sort */,
 			);
 			path = SUT;
-			sourceTree = "<group>";
-		};
-		2FB97E6223E85C5600CA3350 /* Page */ = {
-			isa = PBXGroup;
-			children = (
-				2FB97E6323E85C5600CA3350 /* page_kakao_vclip_first.json */,
-				2FB97E6423E85C5600CA3350 /* page_kakao_image_second.json */,
-				2FB97E6523E85C5600CA3350 /* page_kakao_image_first.json */,
-				2FB97E6623E85C5600CA3350 /* page_naver_image_second.json */,
-				2FB97E6723E85C5600CA3350 /* page_naver_image_first.json */,
-				2FB97E6823E85C5600CA3350 /* page_kakao_vclip_second.json */,
-			);
-			path = Page;
-			sourceTree = "<group>";
-		};
-		2FB97E6A23E85C5600CA3350 /* Sort */ = {
-			isa = PBXGroup;
-			children = (
-				2FB97E6B23E85C5600CA3350 /* sort_naver_image_sim.json */,
-				2FB97E6C23E85C5600CA3350 /* sort_naver_image_date.json */,
-				2FB97E6D23E85C5600CA3350 /* sort_kakao_vclip_accuracy.json */,
-				2FB97E6E23E85C5600CA3350 /* sort_kakao_vclip_recency.json */,
-				2FB97E6F23E85C5600CA3350 /* sort_kakao_image_recency.json */,
-				2FB97E7023E85C5600CA3350 /* sort_kakao_image_accuracy.json */,
-			);
-			path = Sort;
-			sourceTree = "<group>";
-		};
-		2FB97E7123E85C5600CA3350 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				2FB97E7223E85C5600CA3350 /* category_kakao_image.json */,
-				2FB97E7323E85C5600CA3350 /* category_kakao_vclip.json */,
-				2FB97E7423E85C5600CA3350 /* category_naver_image.json */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		2FB97E7623E85C5600CA3350 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				2FB97E7723E85C5600CA3350 /* naverResponse.json */,
+				2FB97E7523E85C5600CA3350 /* kakao_reach_end_error.json */,
 				2FB97E7823E85C5600CA3350 /* kakaoImageResponse.json */,
 				2FB97E7923E85C5600CA3350 /* kakaoVclipResponse.json */,
 			);
@@ -328,17 +282,12 @@
 		2FB97E8E23E85D1300CA3350 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2FB97E9323E85D6D00CA3350 /* KakaoImage.swift */,
-				2FB97E9523E85D7A00CA3350 /* KakaoVclip.swift */,
+				2FB97E9323E85D6D00CA3350 /* KakaoImageResponse.swift */,
+				2FB97E9523E85D7A00CA3350 /* KakaoVclipResponse.swift */,
+				2F95081723E879FF00629639 /* SearchOptions.swift */,
+				2F95081B23E87C2600629639 /* MetaData.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		2FB97E9F23E85F5D00CA3350 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		9B314C885F7E708CB81609E5 /* Frameworks */ = {
@@ -369,6 +318,7 @@
 			buildConfigurationList = 2FB97E4223E8572E00CA3350 /* Build configuration list for PBXNativeTarget "QuickMediaSearch" */;
 			buildPhases = (
 				5F73BC793A5A647A5A8F4088 /* [CP] Check Pods Manifest.lock */,
+				2F95082323E87DC900629639 /* SwiftLint */,
 				2FB97E1F23E8572D00CA3350 /* Sources */,
 				2FB97E2023E8572D00CA3350 /* Frameworks */,
 				2FB97E2123E8572D00CA3350 /* Resources */,
@@ -390,6 +340,7 @@
 				2FB97E3523E8572E00CA3350 /* Sources */,
 				2FB97E3623E8572E00CA3350 /* Frameworks */,
 				2FB97E3723E8572E00CA3350 /* Resources */,
+				ADB4FFF8C5CFE077864ACBFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -454,24 +405,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB97E8923E85C5600CA3350 /* category_naver_image.json in Resources */,
-				2FB97E8723E85C5600CA3350 /* category_kakao_image.json in Resources */,
 				2FB97E8C23E85C5600CA3350 /* kakaoImageResponse.json in Resources */,
-				2FB97E8623E85C5600CA3350 /* sort_kakao_image_accuracy.json in Resources */,
-				2FB97E7C23E85C5600CA3350 /* page_kakao_image_first.json in Resources */,
-				2FB97E7D23E85C5600CA3350 /* page_naver_image_second.json in Resources */,
-				2FB97E7B23E85C5600CA3350 /* page_kakao_image_second.json in Resources */,
-				2FB97E8323E85C5600CA3350 /* sort_kakao_vclip_accuracy.json in Resources */,
-				2FB97E8123E85C5600CA3350 /* sort_naver_image_sim.json in Resources */,
-				2FB97E8223E85C5600CA3350 /* sort_naver_image_date.json in Resources */,
-				2FB97E8423E85C5600CA3350 /* sort_kakao_vclip_recency.json in Resources */,
 				2FB97E8A23E85C5600CA3350 /* kakao_reach_end_error.json in Resources */,
-				2FB97E8B23E85C5600CA3350 /* naverResponse.json in Resources */,
-				2FB97E7A23E85C5600CA3350 /* page_kakao_vclip_first.json in Resources */,
-				2FB97E8823E85C5600CA3350 /* category_kakao_vclip.json in Resources */,
-				2FB97E8523E85C5600CA3350 /* sort_kakao_image_recency.json in Resources */,
-				2FB97E7E23E85C5600CA3350 /* page_naver_image_first.json in Resources */,
-				2FB97E7F23E85C5600CA3350 /* page_kakao_vclip_second.json in Resources */,
 				2FB97E8D23E85C5600CA3350 /* kakaoVclipResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +414,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2F95082323E87DC900629639 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		5F73BC793A5A647A5A8F4088 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -523,6 +476,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ADB4FFF8C5CFE077864ACBFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickMediaSearchTests/Pods-QuickMediaSearchTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickMediaSearchTests/Pods-QuickMediaSearchTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickMediaSearchTests/Pods-QuickMediaSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -530,20 +500,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F95081823E879FF00629639 /* SearchOptions.swift in Sources */,
 				2FB97E9D23E85F0200CA3350 /* MyStoreInteractor.swift in Sources */,
 				2FB97E2B23E8572D00CA3350 /* ViewController.swift in Sources */,
-				2FB97E9623E85D7A00CA3350 /* KakaoVclip.swift in Sources */,
+				2FB97E9623E85D7A00CA3350 /* KakaoVclipResponse.swift in Sources */,
 				2FB97E9B23E85F0200CA3350 /* MyStoreRouter.swift in Sources */,
-				2FB97E9423E85D6D00CA3350 /* KakaoImage.swift in Sources */,
+				2FB97E9423E85D6D00CA3350 /* KakaoImageResponse.swift in Sources */,
 				2FB97E9C23E85F0200CA3350 /* MyStorePresenter.swift in Sources */,
 				2FB97E6023E85B5400CA3350 /* UserDefaultService.swift in Sources */,
 				2FB97E2723E8572D00CA3350 /* AppDelegate.swift in Sources */,
+				2F95082723E8835000629639 /* AppServices.swift in Sources */,
 				2FB97E5B23E85B2900CA3350 /* SearchListWorker.swift in Sources */,
 				2FB97E5023E85AAE00CA3350 /* SearchListPresenter.swift in Sources */,
 				2FB97E9E23E85F0200CA3350 /* MyStoreViewController.swift in Sources */,
 				2FB97E4C23E85A7100CA3350 /* SearchListViewController.swift in Sources */,
 				2FB97E5E23E85B4900CA3350 /* KakaoService.swift in Sources */,
+				2F95081C23E87C2600629639 /* MetaData.swift in Sources */,
 				2FB97E5223E85ABF00CA3350 /* SearchListRouter.swift in Sources */,
+				2F95082523E880DE00629639 /* SearchListPresent.swift in Sources */,
+				2F95081A23E87A9800629639 /* Enviroment.swift in Sources */,
 				2FB97E4E23E85A9800CA3350 /* SearchListInteractor.swift in Sources */,
 				2FB97E2923E8572D00CA3350 /* SceneDelegate.swift in Sources */,
 				2FB97E5523E85AF300CA3350 /* DetailViewController.swift in Sources */,
@@ -555,7 +530,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FB97E8023E85C5600CA3350 /* ResourcesLoader.swift in Sources */,
+				2F95081F23E87D2A00629639 /* KakaoImageResponseTests.swift in Sources */,
 				2FB97E3E23E8572E00CA3350 /* QuickMediaSearchTests.swift in Sources */,
+				2F95082123E87D3500629639 /* KakaoVclipResponseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,4 +8,15 @@
 
 import Foundation
 
-
+class SearchListWorker {
+    
+    private let service: KakaoServiceType
+    
+    init(service: KakaoServiceType) {
+        self.service = service
+    }
+    
+    func fetchSearchList(query: String) -> [SearchListPresent] {
+        return []
+    }
+}

@@ -6,7 +6,7 @@
 //  Copyright © 2018년 tskim. All rights reserved.
 //
 import Foundation
-@testable import TylerQuickMedia
+@testable import QuickMediaSearch
 
 class ResourcesLoader {
     static func loadJson<T: Decodable>(_ resource: String) -> T {
@@ -16,7 +16,6 @@ class ResourcesLoader {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 return try JSONDecoder().decode(T.self, from: data)
             } catch {
-                
             }
         }
         fatalError("can't decode \(T.self)")
@@ -27,7 +26,6 @@ class ResourcesLoader {
             do {
                 return try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
             } catch {
-                
             }
         }
         fatalError("can't read data")
