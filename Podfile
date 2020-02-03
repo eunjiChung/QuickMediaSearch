@@ -4,12 +4,15 @@
 target 'QuickMediaSearch' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for QuickMediaSearch
 
   target 'QuickMediaSearchTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
+    pod "Cuckoo"
   end
 
 end

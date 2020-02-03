@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20E5F5C25271C6747F1C9B7C /* Pods_QuickMediaSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9174EACEF24CF259CCCEFD91 /* Pods_QuickMediaSearch.framework */; };
 		2FB97E2723E8572D00CA3350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E2623E8572D00CA3350 /* AppDelegate.swift */; };
 		2FB97E2923E8572D00CA3350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E2823E8572D00CA3350 /* SceneDelegate.swift */; };
 		2FB97E2B23E8572D00CA3350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E2A23E8572D00CA3350 /* ViewController.swift */; };
@@ -14,6 +15,41 @@
 		2FB97E3023E8572E00CA3350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E2F23E8572E00CA3350 /* Assets.xcassets */; };
 		2FB97E3323E8572E00CA3350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E3123E8572E00CA3350 /* LaunchScreen.storyboard */; };
 		2FB97E3E23E8572E00CA3350 /* QuickMediaSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E3D23E8572E00CA3350 /* QuickMediaSearchTests.swift */; };
+		2FB97E4C23E85A7100CA3350 /* SearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E4B23E85A7100CA3350 /* SearchListViewController.swift */; };
+		2FB97E4E23E85A9800CA3350 /* SearchListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E4D23E85A9800CA3350 /* SearchListInteractor.swift */; };
+		2FB97E5023E85AAE00CA3350 /* SearchListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E4F23E85AAE00CA3350 /* SearchListPresenter.swift */; };
+		2FB97E5223E85ABF00CA3350 /* SearchListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5123E85ABF00CA3350 /* SearchListRouter.swift */; };
+		2FB97E5523E85AF300CA3350 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5423E85AF300CA3350 /* DetailViewController.swift */; };
+		2FB97E5B23E85B2900CA3350 /* SearchListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5A23E85B2900CA3350 /* SearchListWorker.swift */; };
+		2FB97E5E23E85B4900CA3350 /* KakaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5D23E85B4900CA3350 /* KakaoService.swift */; };
+		2FB97E6023E85B5400CA3350 /* UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5F23E85B5400CA3350 /* UserDefaultService.swift */; };
+		2FB97E7A23E85C5600CA3350 /* page_kakao_vclip_first.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6323E85C5600CA3350 /* page_kakao_vclip_first.json */; };
+		2FB97E7B23E85C5600CA3350 /* page_kakao_image_second.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6423E85C5600CA3350 /* page_kakao_image_second.json */; };
+		2FB97E7C23E85C5600CA3350 /* page_kakao_image_first.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6523E85C5600CA3350 /* page_kakao_image_first.json */; };
+		2FB97E7D23E85C5600CA3350 /* page_naver_image_second.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6623E85C5600CA3350 /* page_naver_image_second.json */; };
+		2FB97E7E23E85C5600CA3350 /* page_naver_image_first.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6723E85C5600CA3350 /* page_naver_image_first.json */; };
+		2FB97E7F23E85C5600CA3350 /* page_kakao_vclip_second.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6823E85C5600CA3350 /* page_kakao_vclip_second.json */; };
+		2FB97E8023E85C5600CA3350 /* ResourcesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E6923E85C5600CA3350 /* ResourcesLoader.swift */; };
+		2FB97E8123E85C5600CA3350 /* sort_naver_image_sim.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6B23E85C5600CA3350 /* sort_naver_image_sim.json */; };
+		2FB97E8223E85C5600CA3350 /* sort_naver_image_date.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6C23E85C5600CA3350 /* sort_naver_image_date.json */; };
+		2FB97E8323E85C5600CA3350 /* sort_kakao_vclip_accuracy.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6D23E85C5600CA3350 /* sort_kakao_vclip_accuracy.json */; };
+		2FB97E8423E85C5600CA3350 /* sort_kakao_vclip_recency.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6E23E85C5600CA3350 /* sort_kakao_vclip_recency.json */; };
+		2FB97E8523E85C5600CA3350 /* sort_kakao_image_recency.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E6F23E85C5600CA3350 /* sort_kakao_image_recency.json */; };
+		2FB97E8623E85C5600CA3350 /* sort_kakao_image_accuracy.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7023E85C5600CA3350 /* sort_kakao_image_accuracy.json */; };
+		2FB97E8723E85C5600CA3350 /* category_kakao_image.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7223E85C5600CA3350 /* category_kakao_image.json */; };
+		2FB97E8823E85C5600CA3350 /* category_kakao_vclip.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7323E85C5600CA3350 /* category_kakao_vclip.json */; };
+		2FB97E8923E85C5600CA3350 /* category_naver_image.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7423E85C5600CA3350 /* category_naver_image.json */; };
+		2FB97E8A23E85C5600CA3350 /* kakao_reach_end_error.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7523E85C5600CA3350 /* kakao_reach_end_error.json */; };
+		2FB97E8B23E85C5600CA3350 /* naverResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7723E85C5600CA3350 /* naverResponse.json */; };
+		2FB97E8C23E85C5600CA3350 /* kakaoImageResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7823E85C5600CA3350 /* kakaoImageResponse.json */; };
+		2FB97E8D23E85C5600CA3350 /* kakaoVclipResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E7923E85C5600CA3350 /* kakaoVclipResponse.json */; };
+		2FB97E9423E85D6D00CA3350 /* KakaoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9323E85D6D00CA3350 /* KakaoImage.swift */; };
+		2FB97E9623E85D7A00CA3350 /* KakaoVclip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9523E85D7A00CA3350 /* KakaoVclip.swift */; };
+		2FB97E9B23E85F0200CA3350 /* MyStoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9723E85F0200CA3350 /* MyStoreRouter.swift */; };
+		2FB97E9C23E85F0200CA3350 /* MyStorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9823E85F0200CA3350 /* MyStorePresenter.swift */; };
+		2FB97E9D23E85F0200CA3350 /* MyStoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9923E85F0200CA3350 /* MyStoreInteractor.swift */; };
+		2FB97E9E23E85F0200CA3350 /* MyStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E9A23E85F0200CA3350 /* MyStoreViewController.swift */; };
+		53336A135D030A63AC509019 /* Pods_QuickMediaSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F76D97968F06A4F6F42A3EF /* Pods_QuickMediaSearchTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +74,46 @@
 		2FB97E3923E8572E00CA3350 /* QuickMediaSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickMediaSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB97E3D23E8572E00CA3350 /* QuickMediaSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMediaSearchTests.swift; sourceTree = "<group>"; };
 		2FB97E3F23E8572E00CA3350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB97E4B23E85A7100CA3350 /* SearchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewController.swift; sourceTree = "<group>"; };
+		2FB97E4D23E85A9800CA3350 /* SearchListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListInteractor.swift; sourceTree = "<group>"; };
+		2FB97E4F23E85AAE00CA3350 /* SearchListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListPresenter.swift; sourceTree = "<group>"; };
+		2FB97E5123E85ABF00CA3350 /* SearchListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListRouter.swift; sourceTree = "<group>"; };
+		2FB97E5423E85AF300CA3350 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2FB97E5A23E85B2900CA3350 /* SearchListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListWorker.swift; sourceTree = "<group>"; };
+		2FB97E5D23E85B4900CA3350 /* KakaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoService.swift; sourceTree = "<group>"; };
+		2FB97E5F23E85B5400CA3350 /* UserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultService.swift; sourceTree = "<group>"; };
+		2FB97E6323E85C5600CA3350 /* page_kakao_vclip_first.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_kakao_vclip_first.json; sourceTree = "<group>"; };
+		2FB97E6423E85C5600CA3350 /* page_kakao_image_second.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_kakao_image_second.json; sourceTree = "<group>"; };
+		2FB97E6523E85C5600CA3350 /* page_kakao_image_first.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_kakao_image_first.json; sourceTree = "<group>"; };
+		2FB97E6623E85C5600CA3350 /* page_naver_image_second.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_naver_image_second.json; sourceTree = "<group>"; };
+		2FB97E6723E85C5600CA3350 /* page_naver_image_first.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_naver_image_first.json; sourceTree = "<group>"; };
+		2FB97E6823E85C5600CA3350 /* page_kakao_vclip_second.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page_kakao_vclip_second.json; sourceTree = "<group>"; };
+		2FB97E6923E85C5600CA3350 /* ResourcesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesLoader.swift; sourceTree = "<group>"; };
+		2FB97E6B23E85C5600CA3350 /* sort_naver_image_sim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_naver_image_sim.json; sourceTree = "<group>"; };
+		2FB97E6C23E85C5600CA3350 /* sort_naver_image_date.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_naver_image_date.json; sourceTree = "<group>"; };
+		2FB97E6D23E85C5600CA3350 /* sort_kakao_vclip_accuracy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_kakao_vclip_accuracy.json; sourceTree = "<group>"; };
+		2FB97E6E23E85C5600CA3350 /* sort_kakao_vclip_recency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_kakao_vclip_recency.json; sourceTree = "<group>"; };
+		2FB97E6F23E85C5600CA3350 /* sort_kakao_image_recency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_kakao_image_recency.json; sourceTree = "<group>"; };
+		2FB97E7023E85C5600CA3350 /* sort_kakao_image_accuracy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort_kakao_image_accuracy.json; sourceTree = "<group>"; };
+		2FB97E7223E85C5600CA3350 /* category_kakao_image.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category_kakao_image.json; sourceTree = "<group>"; };
+		2FB97E7323E85C5600CA3350 /* category_kakao_vclip.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category_kakao_vclip.json; sourceTree = "<group>"; };
+		2FB97E7423E85C5600CA3350 /* category_naver_image.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category_naver_image.json; sourceTree = "<group>"; };
+		2FB97E7523E85C5600CA3350 /* kakao_reach_end_error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kakao_reach_end_error.json; sourceTree = "<group>"; };
+		2FB97E7723E85C5600CA3350 /* naverResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = naverResponse.json; sourceTree = "<group>"; };
+		2FB97E7823E85C5600CA3350 /* kakaoImageResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kakaoImageResponse.json; sourceTree = "<group>"; };
+		2FB97E7923E85C5600CA3350 /* kakaoVclipResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kakaoVclipResponse.json; sourceTree = "<group>"; };
+		2FB97E9323E85D6D00CA3350 /* KakaoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoImage.swift; sourceTree = "<group>"; };
+		2FB97E9523E85D7A00CA3350 /* KakaoVclip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoVclip.swift; sourceTree = "<group>"; };
+		2FB97E9723E85F0200CA3350 /* MyStoreRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStoreRouter.swift; sourceTree = "<group>"; };
+		2FB97E9823E85F0200CA3350 /* MyStorePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStorePresenter.swift; sourceTree = "<group>"; };
+		2FB97E9923E85F0200CA3350 /* MyStoreInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStoreInteractor.swift; sourceTree = "<group>"; };
+		2FB97E9A23E85F0200CA3350 /* MyStoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStoreViewController.swift; sourceTree = "<group>"; };
+		5F76D97968F06A4F6F42A3EF /* Pods_QuickMediaSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickMediaSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8524C56AFA3FAB1571BF88D9 /* Pods-QuickMediaSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickMediaSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-QuickMediaSearchTests/Pods-QuickMediaSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9174EACEF24CF259CCCEFD91 /* Pods_QuickMediaSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickMediaSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D3941E4918688F7450A62B /* Pods-QuickMediaSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickMediaSearch.debug.xcconfig"; path = "Target Support Files/Pods-QuickMediaSearch/Pods-QuickMediaSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		C6FD4A63853CE7249082B186 /* Pods-QuickMediaSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickMediaSearch.release.xcconfig"; path = "Target Support Files/Pods-QuickMediaSearch/Pods-QuickMediaSearch.release.xcconfig"; sourceTree = "<group>"; };
+		E300512F75B6B3801CF04C99 /* Pods-QuickMediaSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickMediaSearchTests.release.xcconfig"; path = "Target Support Files/Pods-QuickMediaSearchTests/Pods-QuickMediaSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E5F5C25271C6747F1C9B7C /* Pods_QuickMediaSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53336A135D030A63AC509019 /* Pods_QuickMediaSearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +142,8 @@
 				2FB97E2523E8572D00CA3350 /* QuickMediaSearch */,
 				2FB97E3C23E8572E00CA3350 /* QuickMediaSearchTests */,
 				2FB97E2423E8572D00CA3350 /* Products */,
+				F08E9AD3D17919A21B717E60 /* Pods */,
+				9B314C885F7E708CB81609E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +159,9 @@
 		2FB97E2523E8572D00CA3350 /* QuickMediaSearch */ = {
 			isa = PBXGroup;
 			children = (
+				2FB97E8E23E85D1300CA3350 /* Model */,
+				2FB97E5C23E85B3A00CA3350 /* Service */,
+				2FB97E4823E85A4A00CA3350 /* Scene */,
 				2FB97E2623E8572D00CA3350 /* AppDelegate.swift */,
 				2FB97E2823E8572D00CA3350 /* SceneDelegate.swift */,
 				2FB97E2A23E8572D00CA3350 /* ViewController.swift */,
@@ -93,10 +176,189 @@
 		2FB97E3C23E8572E00CA3350 /* QuickMediaSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				2FB97E9F23E85F5D00CA3350 /* Service */,
+				2FB97E6123E85C2F00CA3350 /* SUT */,
+				2FB97E5623E85AFE00CA3350 /* Scene */,
 				2FB97E3D23E8572E00CA3350 /* QuickMediaSearchTests.swift */,
 				2FB97E3F23E8572E00CA3350 /* Info.plist */,
 			);
 			path = QuickMediaSearchTests;
+			sourceTree = "<group>";
+		};
+		2FB97E4823E85A4A00CA3350 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E5323E85AE100CA3350 /* Detail */,
+				2FB97E4A23E85A6100CA3350 /* MyStore */,
+				2FB97E4923E85A5000CA3350 /* SearchList */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		2FB97E4923E85A5000CA3350 /* SearchList */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E4B23E85A7100CA3350 /* SearchListViewController.swift */,
+				2FB97E4D23E85A9800CA3350 /* SearchListInteractor.swift */,
+				2FB97E4F23E85AAE00CA3350 /* SearchListPresenter.swift */,
+				2FB97E5123E85ABF00CA3350 /* SearchListRouter.swift */,
+				2FB97E5A23E85B2900CA3350 /* SearchListWorker.swift */,
+			);
+			path = SearchList;
+			sourceTree = "<group>";
+		};
+		2FB97E4A23E85A6100CA3350 /* MyStore */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E9923E85F0200CA3350 /* MyStoreInteractor.swift */,
+				2FB97E9823E85F0200CA3350 /* MyStorePresenter.swift */,
+				2FB97E9723E85F0200CA3350 /* MyStoreRouter.swift */,
+				2FB97E9A23E85F0200CA3350 /* MyStoreViewController.swift */,
+			);
+			path = MyStore;
+			sourceTree = "<group>";
+		};
+		2FB97E5323E85AE100CA3350 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E5423E85AF300CA3350 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		2FB97E5623E85AFE00CA3350 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E5923E85B0F00CA3350 /* Detail */,
+				2FB97E5823E85B0900CA3350 /* MyStore */,
+				2FB97E5723E85B0400CA3350 /* SearchList */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		2FB97E5723E85B0400CA3350 /* SearchList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchList;
+			sourceTree = "<group>";
+		};
+		2FB97E5823E85B0900CA3350 /* MyStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyStore;
+			sourceTree = "<group>";
+		};
+		2FB97E5923E85B0F00CA3350 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		2FB97E5C23E85B3A00CA3350 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E5D23E85B4900CA3350 /* KakaoService.swift */,
+				2FB97E5F23E85B5400CA3350 /* UserDefaultService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2FB97E6123E85C2F00CA3350 /* SUT */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E7123E85C5600CA3350 /* Category */,
+				2FB97E7523E85C5600CA3350 /* kakao_reach_end_error.json */,
+				2FB97E6223E85C5600CA3350 /* Page */,
+				2FB97E6923E85C5600CA3350 /* ResourcesLoader.swift */,
+				2FB97E7623E85C5600CA3350 /* Sample */,
+				2FB97E6A23E85C5600CA3350 /* Sort */,
+			);
+			path = SUT;
+			sourceTree = "<group>";
+		};
+		2FB97E6223E85C5600CA3350 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E6323E85C5600CA3350 /* page_kakao_vclip_first.json */,
+				2FB97E6423E85C5600CA3350 /* page_kakao_image_second.json */,
+				2FB97E6523E85C5600CA3350 /* page_kakao_image_first.json */,
+				2FB97E6623E85C5600CA3350 /* page_naver_image_second.json */,
+				2FB97E6723E85C5600CA3350 /* page_naver_image_first.json */,
+				2FB97E6823E85C5600CA3350 /* page_kakao_vclip_second.json */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		2FB97E6A23E85C5600CA3350 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E6B23E85C5600CA3350 /* sort_naver_image_sim.json */,
+				2FB97E6C23E85C5600CA3350 /* sort_naver_image_date.json */,
+				2FB97E6D23E85C5600CA3350 /* sort_kakao_vclip_accuracy.json */,
+				2FB97E6E23E85C5600CA3350 /* sort_kakao_vclip_recency.json */,
+				2FB97E6F23E85C5600CA3350 /* sort_kakao_image_recency.json */,
+				2FB97E7023E85C5600CA3350 /* sort_kakao_image_accuracy.json */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		2FB97E7123E85C5600CA3350 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E7223E85C5600CA3350 /* category_kakao_image.json */,
+				2FB97E7323E85C5600CA3350 /* category_kakao_vclip.json */,
+				2FB97E7423E85C5600CA3350 /* category_naver_image.json */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2FB97E7623E85C5600CA3350 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E7723E85C5600CA3350 /* naverResponse.json */,
+				2FB97E7823E85C5600CA3350 /* kakaoImageResponse.json */,
+				2FB97E7923E85C5600CA3350 /* kakaoVclipResponse.json */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		2FB97E8E23E85D1300CA3350 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FB97E9323E85D6D00CA3350 /* KakaoImage.swift */,
+				2FB97E9523E85D7A00CA3350 /* KakaoVclip.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FB97E9F23E85F5D00CA3350 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9B314C885F7E708CB81609E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9174EACEF24CF259CCCEFD91 /* Pods_QuickMediaSearch.framework */,
+				5F76D97968F06A4F6F42A3EF /* Pods_QuickMediaSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F08E9AD3D17919A21B717E60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3941E4918688F7450A62B /* Pods-QuickMediaSearch.debug.xcconfig */,
+				C6FD4A63853CE7249082B186 /* Pods-QuickMediaSearch.release.xcconfig */,
+				8524C56AFA3FAB1571BF88D9 /* Pods-QuickMediaSearchTests.debug.xcconfig */,
+				E300512F75B6B3801CF04C99 /* Pods-QuickMediaSearchTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +368,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FB97E4223E8572E00CA3350 /* Build configuration list for PBXNativeTarget "QuickMediaSearch" */;
 			buildPhases = (
+				5F73BC793A5A647A5A8F4088 /* [CP] Check Pods Manifest.lock */,
 				2FB97E1F23E8572D00CA3350 /* Sources */,
 				2FB97E2023E8572D00CA3350 /* Frameworks */,
 				2FB97E2123E8572D00CA3350 /* Resources */,
@@ -123,6 +386,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FB97E4523E8572E00CA3350 /* Build configuration list for PBXNativeTarget "QuickMediaSearchTests" */;
 			buildPhases = (
+				92CC59E34E6F98A8A63C8E25 /* [CP] Check Pods Manifest.lock */,
 				2FB97E3523E8572E00CA3350 /* Sources */,
 				2FB97E3623E8572E00CA3350 /* Frameworks */,
 				2FB97E3723E8572E00CA3350 /* Resources */,
@@ -190,19 +454,99 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB97E8923E85C5600CA3350 /* category_naver_image.json in Resources */,
+				2FB97E8723E85C5600CA3350 /* category_kakao_image.json in Resources */,
+				2FB97E8C23E85C5600CA3350 /* kakaoImageResponse.json in Resources */,
+				2FB97E8623E85C5600CA3350 /* sort_kakao_image_accuracy.json in Resources */,
+				2FB97E7C23E85C5600CA3350 /* page_kakao_image_first.json in Resources */,
+				2FB97E7D23E85C5600CA3350 /* page_naver_image_second.json in Resources */,
+				2FB97E7B23E85C5600CA3350 /* page_kakao_image_second.json in Resources */,
+				2FB97E8323E85C5600CA3350 /* sort_kakao_vclip_accuracy.json in Resources */,
+				2FB97E8123E85C5600CA3350 /* sort_naver_image_sim.json in Resources */,
+				2FB97E8223E85C5600CA3350 /* sort_naver_image_date.json in Resources */,
+				2FB97E8423E85C5600CA3350 /* sort_kakao_vclip_recency.json in Resources */,
+				2FB97E8A23E85C5600CA3350 /* kakao_reach_end_error.json in Resources */,
+				2FB97E8B23E85C5600CA3350 /* naverResponse.json in Resources */,
+				2FB97E7A23E85C5600CA3350 /* page_kakao_vclip_first.json in Resources */,
+				2FB97E8823E85C5600CA3350 /* category_kakao_vclip.json in Resources */,
+				2FB97E8523E85C5600CA3350 /* sort_kakao_image_recency.json in Resources */,
+				2FB97E7E23E85C5600CA3350 /* page_naver_image_first.json in Resources */,
+				2FB97E7F23E85C5600CA3350 /* page_kakao_vclip_second.json in Resources */,
+				2FB97E8D23E85C5600CA3350 /* kakaoVclipResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F73BC793A5A647A5A8F4088 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickMediaSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92CC59E34E6F98A8A63C8E25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickMediaSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FB97E1F23E8572D00CA3350 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB97E9D23E85F0200CA3350 /* MyStoreInteractor.swift in Sources */,
 				2FB97E2B23E8572D00CA3350 /* ViewController.swift in Sources */,
+				2FB97E9623E85D7A00CA3350 /* KakaoVclip.swift in Sources */,
+				2FB97E9B23E85F0200CA3350 /* MyStoreRouter.swift in Sources */,
+				2FB97E9423E85D6D00CA3350 /* KakaoImage.swift in Sources */,
+				2FB97E9C23E85F0200CA3350 /* MyStorePresenter.swift in Sources */,
+				2FB97E6023E85B5400CA3350 /* UserDefaultService.swift in Sources */,
 				2FB97E2723E8572D00CA3350 /* AppDelegate.swift in Sources */,
+				2FB97E5B23E85B2900CA3350 /* SearchListWorker.swift in Sources */,
+				2FB97E5023E85AAE00CA3350 /* SearchListPresenter.swift in Sources */,
+				2FB97E9E23E85F0200CA3350 /* MyStoreViewController.swift in Sources */,
+				2FB97E4C23E85A7100CA3350 /* SearchListViewController.swift in Sources */,
+				2FB97E5E23E85B4900CA3350 /* KakaoService.swift in Sources */,
+				2FB97E5223E85ABF00CA3350 /* SearchListRouter.swift in Sources */,
+				2FB97E4E23E85A9800CA3350 /* SearchListInteractor.swift in Sources */,
 				2FB97E2923E8572D00CA3350 /* SceneDelegate.swift in Sources */,
+				2FB97E5523E85AF300CA3350 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB97E8023E85C5600CA3350 /* ResourcesLoader.swift in Sources */,
 				2FB97E3E23E8572E00CA3350 /* QuickMediaSearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +705,7 @@
 		};
 		2FB97E4323E8572E00CA3350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D3941E4918688F7450A62B /* Pods-QuickMediaSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +724,7 @@
 		};
 		2FB97E4423E8572E00CA3350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6FD4A63853CE7249082B186 /* Pods-QuickMediaSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +743,7 @@
 		};
 		2FB97E4623E8572E00CA3350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8524C56AFA3FAB1571BF88D9 /* Pods-QuickMediaSearchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +766,7 @@
 		};
 		2FB97E4723E8572E00CA3350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E300512F75B6B3801CF04C99 /* Pods-QuickMediaSearchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
