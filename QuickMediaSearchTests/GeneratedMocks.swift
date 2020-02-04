@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-04 01:46:11 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-04 02:04:21 +0000
 
 //
 //  SearchListPresenter.swift
@@ -188,6 +188,142 @@ import UIKit
     }
     
      func presentDetailViewController()   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+    
+}
+
+
+// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-04 02:04:21 +0000
+
+//
+//  KakaoService.swift
+//  QuickMediaSearch
+//
+//  Created by Tyler on 2020/02/03.
+//  Copyright © 2020 Assin. All rights reserved.
+//
+
+import Cuckoo
+@testable import QuickMediaSearch
+
+import Foundation
+
+
+ class MockKakaoServiceType: KakaoServiceType, Cuckoo.ProtocolMock {
+    
+     typealias MocksType = KakaoServiceType
+    
+     typealias Stubbing = __StubbingProxy_KakaoServiceType
+     typealias Verification = __VerificationProxy_KakaoServiceType
+
+     let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
+
+    
+    private var __defaultImplStub: KakaoServiceType?
+
+     func enableDefaultImplementation(_ stub: KakaoServiceType) {
+        __defaultImplStub = stub
+        cuckoo_manager.enableDefaultStubImplementation()
+    }
+    
+
+    
+
+    
+
+    
+    
+    
+     func fetchImage(result: @escaping (Result<KakaoImageResponse, Error>) -> Void)  {
+        
+    return cuckoo_manager.call("fetchImage(result: @escaping (Result<KakaoImageResponse, Error>) -> Void)",
+            parameters: (result),
+            escapingParameters: (result),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.fetchImage(result: result))
+        
+    }
+    
+    
+    
+     func fetchVClip(result: @escaping (Result<KakaoVclipResponse, Error>) -> Void)  {
+        
+    return cuckoo_manager.call("fetchVClip(result: @escaping (Result<KakaoVclipResponse, Error>) -> Void)",
+            parameters: (result),
+            escapingParameters: (result),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.fetchVClip(result: result))
+        
+    }
+    
+
+	 struct __StubbingProxy_KakaoServiceType: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	     init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	    func fetchImage<M1: Cuckoo.Matchable>(result: M1) -> Cuckoo.ProtocolStubNoReturnFunction<((Result<KakaoImageResponse, Error>) -> Void)> where M1.MatchedType == (Result<KakaoImageResponse, Error>) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<((Result<KakaoImageResponse, Error>) -> Void)>] = [wrap(matchable: result) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockKakaoServiceType.self, method: "fetchImage(result: @escaping (Result<KakaoImageResponse, Error>) -> Void)", parameterMatchers: matchers))
+	    }
+	    
+	    func fetchVClip<M1: Cuckoo.Matchable>(result: M1) -> Cuckoo.ProtocolStubNoReturnFunction<((Result<KakaoVclipResponse, Error>) -> Void)> where M1.MatchedType == (Result<KakaoVclipResponse, Error>) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<((Result<KakaoVclipResponse, Error>) -> Void)>] = [wrap(matchable: result) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockKakaoServiceType.self, method: "fetchVClip(result: @escaping (Result<KakaoVclipResponse, Error>) -> Void)", parameterMatchers: matchers))
+	    }
+	    
+	}
+
+	 struct __VerificationProxy_KakaoServiceType: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	
+	    
+	    @discardableResult
+	    func fetchImage<M1: Cuckoo.Matchable>(result: M1) -> Cuckoo.__DoNotUse<((Result<KakaoImageResponse, Error>) -> Void), Void> where M1.MatchedType == (Result<KakaoImageResponse, Error>) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<((Result<KakaoImageResponse, Error>) -> Void)>] = [wrap(matchable: result) { $0 }]
+	        return cuckoo_manager.verify("fetchImage(result: @escaping (Result<KakaoImageResponse, Error>) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func fetchVClip<M1: Cuckoo.Matchable>(result: M1) -> Cuckoo.__DoNotUse<((Result<KakaoVclipResponse, Error>) -> Void), Void> where M1.MatchedType == (Result<KakaoVclipResponse, Error>) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<((Result<KakaoVclipResponse, Error>) -> Void)>] = [wrap(matchable: result) { $0 }]
+	        return cuckoo_manager.verify("fetchVClip(result: @escaping (Result<KakaoVclipResponse, Error>) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	}
+}
+
+ class KakaoServiceTypeStub: KakaoServiceType {
+    
+
+    
+
+    
+     func fetchImage(result: @escaping (Result<KakaoImageResponse, Error>) -> Void)   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+    
+     func fetchVClip(result: @escaping (Result<KakaoVclipResponse, Error>) -> Void)   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     

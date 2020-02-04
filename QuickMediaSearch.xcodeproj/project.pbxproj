@@ -10,6 +10,8 @@
 		20E5F5C25271C6747F1C9B7C /* Pods_QuickMediaSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9174EACEF24CF259CCCEFD91 /* Pods_QuickMediaSearch.framework */; };
 		2F69ABB823E9020400F47E1C /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69ABB723E9020300F47E1C /* GeneratedMocks.swift */; };
 		2F69ABBA23E9021B00F47E1C /* SearchListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69ABB923E9021B00F47E1C /* SearchListInteractorTests.swift */; };
+		2F69ABBC23E9084500F47E1C /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69ABBB23E9084500F47E1C /* TestError.swift */; };
+		2F69ABBE23E9088C00F47E1C /* MockKakaoServiceType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69ABBD23E9088C00F47E1C /* MockKakaoServiceType+.swift */; };
 		2F95081823E879FF00629639 /* SearchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95081723E879FF00629639 /* SearchOptions.swift */; };
 		2F95081A23E87A9800629639 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95081923E87A9800629639 /* Enviroment.swift */; };
 		2F95081C23E87C2600629639 /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95081B23E87C2600629639 /* MetaData.swift */; };
@@ -57,6 +59,8 @@
 /* Begin PBXFileReference section */
 		2F69ABB723E9020300F47E1C /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		2F69ABB923E9021B00F47E1C /* SearchListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchListInteractorTests.swift; path = QuickMediaSearchTests/SearchListInteractorTests.swift; sourceTree = SOURCE_ROOT; };
+		2F69ABBB23E9084500F47E1C /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		2F69ABBD23E9088C00F47E1C /* MockKakaoServiceType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MockKakaoServiceType+.swift"; sourceTree = "<group>"; };
 		2F95081723E879FF00629639 /* SearchOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptions.swift; sourceTree = "<group>"; };
 		2F95081923E87A9800629639 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		2F95081B23E87C2600629639 /* MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				2F69ABB723E9020300F47E1C /* GeneratedMocks.swift */,
+				2F69ABBB23E9084500F47E1C /* TestError.swift */,
 				2F95081D23E87D1E00629639 /* Model */,
 				2FB97E6123E85C2F00CA3350 /* SUT */,
 				2FB97E5623E85AFE00CA3350 /* Scene */,
@@ -268,6 +273,7 @@
 			children = (
 				2FB97E6923E85C5600CA3350 /* ResourcesLoader.swift */,
 				2FB97E7623E85C5600CA3350 /* Sample */,
+				2F69ABBD23E9088C00F47E1C /* MockKakaoServiceType+.swift */,
 			);
 			path = SUT;
 			sourceTree = "<group>";
@@ -451,7 +457,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" --no-class-mocking \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Scene/SearchList/SearchListPresenter.swift\" \n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" --no-class-mocking \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Scene/SearchList/SearchListPresenter.swift\" \\\n\"${INPUT_DIR}/Service/KakaoService.swift\" \n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 		2F95082323E87DC900629639 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -551,10 +557,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FB97E8023E85C5600CA3350 /* ResourcesLoader.swift in Sources */,
+				2F69ABBE23E9088C00F47E1C /* MockKakaoServiceType+.swift in Sources */,
 				2F95081F23E87D2A00629639 /* KakaoImageResponseTests.swift in Sources */,
 				2F69ABBA23E9021B00F47E1C /* SearchListInteractorTests.swift in Sources */,
 				2FB97E3E23E8572E00CA3350 /* QuickMediaSearchTests.swift in Sources */,
 				2F95082123E87D3500629639 /* KakaoVclipResponseTests.swift in Sources */,
+				2F69ABBC23E9084500F47E1C /* TestError.swift in Sources */,
 				2F69ABB823E9020400F47E1C /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
