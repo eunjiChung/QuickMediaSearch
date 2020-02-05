@@ -23,9 +23,7 @@ struct KakaoImage: Thumbnailable, Decodable {
     let width: Int
     let display_sitename: String
     let doc_url: String
-}
-
-extension KakaoImage {
+    
     var thumbnail: String {
         return thumbnail_url
     }
