@@ -6,8 +6,6 @@
 //  Copyright © 2020 Assin. All rights reserved.
 //
 
-import Foundation
-
 protocol MyStorePresentationLogic {
     func presentProgress(isShow: Bool)
     func presentAlert(_ alert: UIAlertControllerBuilder)

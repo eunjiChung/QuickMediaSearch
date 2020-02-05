@@ -6,6 +6,7 @@
 //  Copyright © 2020 Assin. All rights reserved.
 //
 
+
 import Foundation
 
 protocol UserDefaultServiceType {
@@ -32,7 +33,6 @@ class UserDefaultService: UserDefaultServiceType {
     }
     
     func fetchFavorites(result: @escaping (Result<[Thumbnailable], Error>) -> Void) {
-        
-        
+        result(Result.success([]))
     }
 }

@@ -25,6 +25,7 @@ class MyStoreInteractor: MyStoreBusinessLogic {
     func fetchFavorites() {
         self.presenter.presentProgress(isShow: true)
         self.favoriteService.fetchFavorites { (result) in
+            self.presenter.presentProgress(isShow: false)
             switch result {
             case .success(let thumbnailable):
                 self.presenter.presentFetchedFavorites()

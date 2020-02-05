@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: QuickMediaSearch/Scene/MyStore/MyStorePresenter.swift at 2020-02-05 15:03:16 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Scene/MyStore/MyStorePresenter.swift at 2020-02-05 15:15:59 +0000
 
 //
 //  SearchListPresenter.swift
@@ -10,8 +10,6 @@
 
 import Cuckoo
 @testable import QuickMediaSearch
-
-import Foundation
 
 
  class MockMyStorePresentationLogic: MyStorePresentationLogic, Cuckoo.ProtocolMock {
@@ -164,7 +162,7 @@ import Foundation
 }
 
 
-// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-05 15:03:16 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-05 15:15:59 +0000
 
 //
 //  SearchListPresenter.swift
@@ -360,7 +358,7 @@ import UIKit
 }
 
 
-// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-05 15:03:16 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-05 15:15:59 +0000
 
 //
 //  KakaoService.swift

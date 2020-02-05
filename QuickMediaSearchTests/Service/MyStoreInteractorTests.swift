@@ -28,6 +28,7 @@ class MyStoreInteractorTests: XCTestCase {
     }
     func test_SuccessFetched_displaySection() {
         // Given
+        
         // When
         self.subject.fetchFavorites()
         // Then
