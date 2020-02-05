@@ -12,7 +12,6 @@ protocol MyStoreBusinessLogic {
     func fetchFavorites()
 }
 
-
 class MyStoreInteractor: MyStoreBusinessLogic {
     
     private let presenter: MyStorePresentationLogic
@@ -24,5 +23,15 @@ class MyStoreInteractor: MyStoreBusinessLogic {
     }
     
     func fetchFavorites() {
+        self.presenter.presentProgress(isShow: true)
+        self.favoriteService.fetchFavorites { (result) in
+            switch result {
+            case .success(let thumbnailable):
+                self.presenter.presentFetchedFavorites()
+            case .failure(let error):
+                let alert = UIAlertControllerBuilder().setMessage("에러가 발생하였습니다.")
+                self.presenter.presentAlert(alert)
+            }
+        }
     }
 }

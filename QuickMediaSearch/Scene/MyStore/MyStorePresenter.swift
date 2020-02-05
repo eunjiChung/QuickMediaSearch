@@ -11,7 +11,7 @@ import Foundation
 protocol MyStorePresentationLogic {
     func presentProgress(isShow: Bool)
     func presentAlert(_ alert: UIAlertControllerBuilder)
-    func presentFetchedSearchList()
+    func presentFetchedFavorites()
 }
 class MyStorePresenter: MyStorePresentationLogic {
     func presentProgress(isShow: Bool) {
@@ -20,6 +20,7 @@ class MyStorePresenter: MyStorePresentationLogic {
     func presentAlert(_ alert: UIAlertControllerBuilder) {
     }
     
-    func presentFetchedSearchList() {
+    func presentFetchedFavorites() {
+        
     }
 }

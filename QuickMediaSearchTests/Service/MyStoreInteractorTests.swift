@@ -32,7 +32,7 @@ class MyStoreInteractorTests: XCTestCase {
         self.subject.fetchFavorites()
         // Then
         verify(self.presenter).presentProgress(isShow: true)
-        verify(self.presenter).presentFetchedSearchList()
+        verify(self.presenter).presentFetchedFavorites()
         verify(self.presenter).presentProgress(isShow: false)
     }
 
@@ -54,6 +54,7 @@ class StubMyStorePresentationLogic: MyStorePresentationLogic {
     func presentAlert(_ alert: UIAlertControllerBuilder) {
     }
     
-    func presentFetchedSearchList() {
+    func presentFetchedFavorites() {
+        
     }
 }
