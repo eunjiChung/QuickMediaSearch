@@ -9,18 +9,29 @@
 import Foundation
 
 protocol SearchListBusinessLogic {
-    func fetchSearchList()
+    func fetchSearchList(query: String)
 }
 
 class SearchListInteractor: SearchListBusinessLogic {
     
     private let presenter: SearchListPresentationLogic
-    private let worker: SearchListWorker
+    private let service: KakaoServiceType
     init(service: KakaoServiceType, presenter: SearchListPresentationLogic) {
         self.presenter = presenter
-        self.worker = SearchListWorker(service: service)
+        self.service = service
     }
     
-    func fetchSearchList() {
+    func fetchSearchList(query: String) {
+        self.presenter.presentProgress(isShow: true)
+        self.service.fetchMedium { result in
+            self.presenter.presentProgress(isShow: false)
+            switch result {
+            case .success(let thumbnails):
+                self.presenter.presentFetchedSearchList()
+            case .failure(let error):
+                let alert = UIAlertControllerBuilder().setMessage("에러가 발생하였습니다.")
+                self.presenter.presentAlert(alert)
+            }
+        }
     }
 }

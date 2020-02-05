@@ -21,6 +21,7 @@
 		2FAF6D2C23EAEA4F005F3867 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF6D2B23EAEA4F005F3867 /* .swiftlint.yml */; };
 		2FAF6D2E23EAEABF005F3867 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6D2D23EAEABE005F3867 /* Mock.generated.swift */; };
 		2FAF6D3023EAEC23005F3867 /* QuickFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6D2F23EAEC23005F3867 /* QuickFixture.swift */; };
+		2FAF6D3323EAF03E005F3867 /* UIAlertControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6D3223EAF03E005F3867 /* UIAlertControllerBuilder.swift */; };
 		2FB97E2723E8572D00CA3350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E2623E8572D00CA3350 /* AppDelegate.swift */; };
 		2FB97E2B23E8572D00CA3350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E2A23E8572D00CA3350 /* ViewController.swift */; };
 		2FB97E2E23E8572D00CA3350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB97E2C23E8572D00CA3350 /* Main.storyboard */; };
@@ -31,7 +32,6 @@
 		2FB97E5023E85AAE00CA3350 /* SearchListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E4F23E85AAE00CA3350 /* SearchListPresenter.swift */; };
 		2FB97E5223E85ABF00CA3350 /* SearchListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5123E85ABF00CA3350 /* SearchListRouter.swift */; };
 		2FB97E5523E85AF300CA3350 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5423E85AF300CA3350 /* DetailViewController.swift */; };
-		2FB97E5B23E85B2900CA3350 /* SearchListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5A23E85B2900CA3350 /* SearchListWorker.swift */; };
 		2FB97E5E23E85B4900CA3350 /* KakaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5D23E85B4900CA3350 /* KakaoService.swift */; };
 		2FB97E6023E85B5400CA3350 /* UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E5F23E85B5400CA3350 /* UserDefaultService.swift */; };
 		2FB97E8023E85C5600CA3350 /* ResourcesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB97E6923E85C5600CA3350 /* ResourcesLoader.swift */; };
@@ -71,6 +71,7 @@
 		2FAF6D2B23EAEA4F005F3867 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		2FAF6D2D23EAEABE005F3867 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
 		2FAF6D2F23EAEC23005F3867 /* QuickFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFixture.swift; sourceTree = "<group>"; };
+		2FAF6D3223EAF03E005F3867 /* UIAlertControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerBuilder.swift; sourceTree = "<group>"; };
 		2FB97E2323E8572D00CA3350 /* QuickMediaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickMediaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB97E2623E8572D00CA3350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FB97E2A23E8572D00CA3350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		2FB97E4F23E85AAE00CA3350 /* SearchListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListPresenter.swift; sourceTree = "<group>"; };
 		2FB97E5123E85ABF00CA3350 /* SearchListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListRouter.swift; sourceTree = "<group>"; };
 		2FB97E5423E85AF300CA3350 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		2FB97E5A23E85B2900CA3350 /* SearchListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListWorker.swift; sourceTree = "<group>"; };
 		2FB97E5D23E85B4900CA3350 /* KakaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoService.swift; sourceTree = "<group>"; };
 		2FB97E5F23E85B5400CA3350 /* UserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultService.swift; sourceTree = "<group>"; };
 		2FB97E6923E85C5600CA3350 /* ResourcesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesLoader.swift; sourceTree = "<group>"; };
@@ -133,6 +133,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2FAF6D3123EAF030005F3867 /* Genaral */ = {
+			isa = PBXGroup;
+			children = (
+				2FAF6D3223EAF03E005F3867 /* UIAlertControllerBuilder.swift */,
+			);
+			path = Genaral;
+			sourceTree = "<group>";
+		};
 		2FB97E1A23E8572D00CA3350 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				2FAF6D2B23EAEA4F005F3867 /* .swiftlint.yml */,
+				2FAF6D3123EAF030005F3867 /* Genaral */,
 				2FB97E8E23E85D1300CA3350 /* Model */,
 				2FB97E5C23E85B3A00CA3350 /* Service */,
 				2FB97E4823E85A4A00CA3350 /* Scene */,
@@ -201,7 +210,6 @@
 				2FB97E4D23E85A9800CA3350 /* SearchListInteractor.swift */,
 				2FB97E4F23E85AAE00CA3350 /* SearchListPresenter.swift */,
 				2FB97E5123E85ABF00CA3350 /* SearchListRouter.swift */,
-				2FB97E5A23E85B2900CA3350 /* SearchListWorker.swift */,
 				2F95082423E880DE00629639 /* SearchListPresent.swift */,
 			);
 			path = SearchList;
@@ -542,9 +550,9 @@
 				2FB97E6023E85B5400CA3350 /* UserDefaultService.swift in Sources */,
 				2FB97E2723E8572D00CA3350 /* AppDelegate.swift in Sources */,
 				2F95082723E8835000629639 /* AppServices.swift in Sources */,
-				2FB97E5B23E85B2900CA3350 /* SearchListWorker.swift in Sources */,
 				2FB97E5023E85AAE00CA3350 /* SearchListPresenter.swift in Sources */,
 				2FB97E9E23E85F0200CA3350 /* MyStoreViewController.swift in Sources */,
+				2FAF6D3323EAF03E005F3867 /* UIAlertControllerBuilder.swift in Sources */,
 				2FB97E4C23E85A7100CA3350 /* SearchListViewController.swift in Sources */,
 				2FB97E5E23E85B4900CA3350 /* KakaoService.swift in Sources */,
 				2F95081C23E87C2600629639 /* MetaData.swift in Sources */,

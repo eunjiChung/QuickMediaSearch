@@ -10,7 +10,7 @@ import UIKit
 
 protocol SearchListPresentationLogic {
     func presentProgress(isShow: Bool)
-    func presentAlert(_ alert: UIAlertController)
+    func presentAlert(_ alert: UIAlertControllerBuilder)
     func presentFetchedSearchList()
     func presentDetailViewController()
 }
@@ -23,7 +23,7 @@ class SearchListPresentation: SearchListPresentationLogic {
     func presentProgress(isShow: Bool) {
     }
     
-    func presentAlert(_ alert: UIAlertController) {
+    func presentAlert(_ builder: UIAlertControllerBuilder) {
     }
     
     func presentFetchedSearchList() {

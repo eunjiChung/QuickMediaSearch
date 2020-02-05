@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-05 12:34:46 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-05 12:55:01 +0000
 
 //
 //  SearchListPresenter.swift
@@ -54,9 +54,9 @@ import UIKit
     
     
     
-     func presentAlert(_ alert: UIAlertController)  {
+     func presentAlert(_ alert: UIAlertControllerBuilder)  {
         
-    return cuckoo_manager.call("presentAlert(_: UIAlertController)",
+    return cuckoo_manager.call("presentAlert(_: UIAlertControllerBuilder)",
             parameters: (alert),
             escapingParameters: (alert),
             superclassCall:
@@ -111,9 +111,9 @@ import UIKit
 	        return .init(stub: cuckoo_manager.createStub(for: MockSearchListPresentationLogic.self, method: "presentProgress(isShow: Bool)", parameterMatchers: matchers))
 	    }
 	    
-	    func presentAlert<M1: Cuckoo.Matchable>(_ alert: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(UIAlertController)> where M1.MatchedType == UIAlertController {
-	        let matchers: [Cuckoo.ParameterMatcher<(UIAlertController)>] = [wrap(matchable: alert) { $0 }]
-	        return .init(stub: cuckoo_manager.createStub(for: MockSearchListPresentationLogic.self, method: "presentAlert(_: UIAlertController)", parameterMatchers: matchers))
+	    func presentAlert<M1: Cuckoo.Matchable>(_ alert: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(UIAlertControllerBuilder)> where M1.MatchedType == UIAlertControllerBuilder {
+	        let matchers: [Cuckoo.ParameterMatcher<(UIAlertControllerBuilder)>] = [wrap(matchable: alert) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockSearchListPresentationLogic.self, method: "presentAlert(_: UIAlertControllerBuilder)", parameterMatchers: matchers))
 	    }
 	    
 	    func presentFetchedSearchList() -> Cuckoo.ProtocolStubNoReturnFunction<()> {
@@ -149,9 +149,9 @@ import UIKit
 	    }
 	    
 	    @discardableResult
-	    func presentAlert<M1: Cuckoo.Matchable>(_ alert: M1) -> Cuckoo.__DoNotUse<(UIAlertController), Void> where M1.MatchedType == UIAlertController {
-	        let matchers: [Cuckoo.ParameterMatcher<(UIAlertController)>] = [wrap(matchable: alert) { $0 }]
-	        return cuckoo_manager.verify("presentAlert(_: UIAlertController)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    func presentAlert<M1: Cuckoo.Matchable>(_ alert: M1) -> Cuckoo.__DoNotUse<(UIAlertControllerBuilder), Void> where M1.MatchedType == UIAlertControllerBuilder {
+	        let matchers: [Cuckoo.ParameterMatcher<(UIAlertControllerBuilder)>] = [wrap(matchable: alert) { $0 }]
+	        return cuckoo_manager.verify("presentAlert(_: UIAlertControllerBuilder)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
 	    @discardableResult
@@ -179,7 +179,7 @@ import UIKit
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
-     func presentAlert(_ alert: UIAlertController)   {
+     func presentAlert(_ alert: UIAlertControllerBuilder)   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
@@ -194,7 +194,7 @@ import UIKit
 }
 
 
-// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-05 12:34:46 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-05 12:55:01 +0000
 
 //
 //  KakaoService.swift
