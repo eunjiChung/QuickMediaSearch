@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+protocol MyStorePresentationLogic {
+    func presentProgress(isShow: Bool)
+    func presentAlert(_ alert: UIAlertControllerBuilder)
+    func presentFetchedSearchList()
+}
+class MyStorePresenter: MyStorePresentationLogic {
+    func presentProgress(isShow: Bool) {
+    }
+    
+    func presentAlert(_ alert: UIAlertControllerBuilder) {
+    }
+    
+    func presentFetchedSearchList() {
+    }
+}

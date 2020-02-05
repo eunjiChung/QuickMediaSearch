@@ -11,7 +11,6 @@ import Cuckoo
 @testable import QuickMediaSearch
 
 class SearchListInteractorTests: XCTestCase {
-    
     var subject: SearchListInteractor!
     var service: MockKakaoServiceType!
     var presenter: MockSearchListPresentationLogic!
@@ -44,7 +43,6 @@ class SearchListInteractorTests: XCTestCase {
         verify(self.presenter, times(1)).presentAlert(any())
         verify(self.presenter, times(1)).presentProgress(isShow: false)
     }
-    
 }
 
 class StubSearchListPresentationLogic: SearchListPresentationLogic {
