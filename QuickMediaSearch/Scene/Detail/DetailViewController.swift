@@ -13,6 +13,7 @@ import UIKit
  3. 사진은 원본 사이즈로 보야줘야 한다.
  */
 
+// 어떤 메시지로 전달되어야 하는지? 감을 모르겠어요.
 class DetailViewController: UIViewController {
     
     private let service: AppServices

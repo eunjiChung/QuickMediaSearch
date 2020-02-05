@@ -10,7 +10,7 @@ import Foundation
 
 protocol Thumbnailable {
     var type: ThumbnailType { get } // Vclip, Image
-    var thumbnail: String { get } // Thumbnail URL
+    var thumbnail: String { get } // Thumbnail URL // Key
     var width: Int { get }
     var height: Int { get }
 }

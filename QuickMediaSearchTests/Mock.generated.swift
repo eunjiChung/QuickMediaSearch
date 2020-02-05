@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-05 13:52:55 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-05 14:16:08 +0000
 
 //
 //  SearchListPresenter.swift
@@ -194,7 +194,7 @@ import UIKit
 }
 
 
-// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-05 13:52:55 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-05 14:16:08 +0000
 
 //
 //  KakaoService.swift

@@ -31,4 +31,14 @@ class UserDefaultServiceTests: XCTestCase {
         // Then
         XCTAssertEqual(subject.isFavorite(thumbnail), true)
     }
+    
+    func test_removeFavorite_ShouldBeRemove() {
+        // Given
+        let thumbnail = QuickFixture.Sample.image.documents[0]
+        // When
+        subject.addFavorite(thumbnail)
+        subject.removeFavorite(thumbnail)
+        // Then
+        XCTAssertEqual(subject.isFavorite(thumbnail), false)
+    }
 }

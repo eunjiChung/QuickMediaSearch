@@ -11,21 +11,21 @@ import Foundation
 protocol UserDefaultServiceType {
     func isFavorite(_ thumbnail: Thumbnailable) -> Bool
     func addFavorite(_ thumbnail: Thumbnailable)
-    func removeFavorite()
+    func removeFavorite(_ thumbnail: Thumbnailable)
 }
 
 class UserDefaultService: UserDefaultServiceType {
-    /*
-     TODO: Level[2] 아래 동작 검증필요
-     */
+    private var favorites = [String: Bool]()
+
     func isFavorite(_ thumbnail: Thumbnailable) -> Bool {
-        return false
+        return favorites[thumbnail.thumbnail] == true
     }
     
     func addFavorite(_ thumbnail: Thumbnailable) {
-        
+        favorites.updateValue(true, forKey: thumbnail.thumbnail)
     }
     
-    func removeFavorite() {
+    func removeFavorite(_ thumbnail: Thumbnailable) {
+        
     }
 }
