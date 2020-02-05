@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: QuickMediaSearch/Scene/MyStore/MyStorePresenter.swift at 2020-02-05 14:36:47 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Scene/MyStore/MyStorePresenter.swift at 2020-02-05 15:11:07 +0000
 
 //
 //  SearchListPresenter.swift
@@ -10,8 +10,6 @@
 
 import Cuckoo
 @testable import QuickMediaSearch
-
-import Foundation
 
 
  class MockMyStorePresentationLogic: MyStorePresentationLogic, Cuckoo.ProtocolMock {
@@ -69,16 +67,16 @@ import Foundation
     
     
     
-     func presentFetchedSearchList()  {
+     func presentFetchedFavorites()  {
         
-    return cuckoo_manager.call("presentFetchedSearchList()",
+    return cuckoo_manager.call("presentFetchedFavorites()",
             parameters: (),
             escapingParameters: (),
             superclassCall:
                 
                 Cuckoo.MockManager.crashOnProtocolSuperclassCall()
                 ,
-            defaultCall: __defaultImplStub!.presentFetchedSearchList())
+            defaultCall: __defaultImplStub!.presentFetchedFavorites())
         
     }
     
@@ -101,9 +99,9 @@ import Foundation
 	        return .init(stub: cuckoo_manager.createStub(for: MockMyStorePresentationLogic.self, method: "presentAlert(_: UIAlertControllerBuilder)", parameterMatchers: matchers))
 	    }
 	    
-	    func presentFetchedSearchList() -> Cuckoo.ProtocolStubNoReturnFunction<()> {
+	    func presentFetchedFavorites() -> Cuckoo.ProtocolStubNoReturnFunction<()> {
 	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
-	        return .init(stub: cuckoo_manager.createStub(for: MockMyStorePresentationLogic.self, method: "presentFetchedSearchList()", parameterMatchers: matchers))
+	        return .init(stub: cuckoo_manager.createStub(for: MockMyStorePresentationLogic.self, method: "presentFetchedFavorites()", parameterMatchers: matchers))
 	    }
 	    
 	}
@@ -135,9 +133,9 @@ import Foundation
 	    }
 	    
 	    @discardableResult
-	    func presentFetchedSearchList() -> Cuckoo.__DoNotUse<(), Void> {
+	    func presentFetchedFavorites() -> Cuckoo.__DoNotUse<(), Void> {
 	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
-	        return cuckoo_manager.verify("presentFetchedSearchList()", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	        return cuckoo_manager.verify("presentFetchedFavorites()", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
 	}
@@ -157,14 +155,14 @@ import Foundation
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
-     func presentFetchedSearchList()   {
+     func presentFetchedFavorites()   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
 }
 
 
-// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-05 14:36:47 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-05 15:11:07 +0000
 
 //
 //  SearchListPresenter.swift
@@ -360,7 +358,7 @@ import UIKit
 }
 
 
-// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-05 14:36:47 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-05 15:11:07 +0000
 
 //
 //  KakaoService.swift
