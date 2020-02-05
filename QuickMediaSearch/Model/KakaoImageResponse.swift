@@ -8,13 +8,14 @@
 
 import Foundation
 
-struct KakaoImageResponse {
+struct KakaoImageResponse: Decodable {
     let meta: MetaData
     let documents: [KakaoImage]
 }
 
-struct KakaoImage {
-    let thumbnail_url: String
+struct KakaoImage: Thumbnailable, Decodable {
+    let type = ThumbnailType.image
+    private let thumbnail_url: String
     let datetime: String
     let image_url: String
     let collection: String
@@ -22,4 +23,10 @@ struct KakaoImage {
     let width: Int
     let display_sitename: String
     let doc_url: String
+}
+
+extension KakaoImage {
+    var thumbnail: String {
+        return thumbnail_url
+    }
 }

@@ -11,13 +11,13 @@ import Cuckoo
 
 extension MockKakaoServiceType {
     @discardableResult
-    func stubKakaoImage(_ result: Result<KakaoImageResponse, Error>) {
+    func stubFetchMedium(_ result: Result<[Thumbnailable], Error>) {
         stub(self, block: { mock in
-            when(mock.fetchImage(result: any()))
+            when(mock.fetchMedium(result: any()))
                 .then({ closure in
                     closure(result)
                 })
         })
-        
+
     }
 }

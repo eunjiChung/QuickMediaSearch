@@ -27,12 +27,21 @@ class SearchListInteractorTests: XCTestCase {
         super.tearDown()
     }
     
-    func test_fetched_displaySection() {
+    func test_successFetched_displaySection() {
+        self.service.stubFetchMedium(Result.success(QuickFixture.Sample.image.documents))
         self.subject.fetchSearchList()
-        verify(self.presenter).presentProgress(isShow: true)
-        verify(self.presenter).presentFetchedSearchList()
-        verify(self.presenter).presentProgress(isShow: false)
+        verify(self.presenter, times(1)).presentProgress(isShow: true)
+        verify(self.presenter, times(1)).presentFetchedSearchList()
+        verify(self.presenter, times(1)).presentProgress(isShow: false)
     }
+    
+    func test_failFetched_displaySection() {
+        self.subject.fetchSearchList()
+        verify(self.presenter, times(1)).presentProgress(isShow: true)
+        verify(self.presenter, times(1)).presentAlert(any())
+        verify(self.presenter, times(1)).presentProgress(isShow: false)
+    }
+    
 }
 
 class StubSearchListPresentationLogic: SearchListPresentationLogic {
@@ -48,5 +57,4 @@ class StubSearchListPresentationLogic: SearchListPresentationLogic {
     func presentDetailViewController() {
     }
 }
-
 

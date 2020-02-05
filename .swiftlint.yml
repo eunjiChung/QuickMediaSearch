@@ -16,5 +16,5 @@ included:
 excluded:
 - Carthage
 - Pods
-- Lin
-
+- "**/*.generated.swift"
+- "*.generated.swift"
