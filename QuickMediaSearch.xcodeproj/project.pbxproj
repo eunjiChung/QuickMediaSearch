@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		20E5F5C25271C6747F1C9B7C /* Pods_QuickMediaSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9174EACEF24CF259CCCEFD91 /* Pods_QuickMediaSearch.framework */; };
 		2F4919AF23EFD01400CCF43B /* KakaoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919AE23EFD01400CCF43B /* KakaoServiceTests.swift */; };
+		2F4919B223EFD31A00CCF43B /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919B123EFD31A00CCF43B /* NetworkRequestProtocol.swift */; };
+		2F4919B423EFD34D00CCF43B /* URLRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919B323EFD34D00CCF43B /* URLRequests.swift */; };
+		2F4919B823EFD37D00CCF43B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919B723EFD37D00CCF43B /* HTTPMethod.swift */; };
 		2F69ABBA23E9021B00F47E1C /* SearchListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69ABB923E9021B00F47E1C /* SearchListInteractorTests.swift */; };
 		2F69ABBC23E9084500F47E1C /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69ABBB23E9084500F47E1C /* TestError.swift */; };
 		2F69ABBE23E9088C00F47E1C /* MockKakaoServiceType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69ABBD23E9088C00F47E1C /* MockKakaoServiceType+.swift */; };
@@ -62,6 +65,9 @@
 
 /* Begin PBXFileReference section */
 		2F4919AE23EFD01400CCF43B /* KakaoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoServiceTests.swift; sourceTree = "<group>"; };
+		2F4919B123EFD31A00CCF43B /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
+		2F4919B323EFD34D00CCF43B /* URLRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequests.swift; sourceTree = "<group>"; };
+		2F4919B723EFD37D00CCF43B /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		2F69ABB923E9021B00F47E1C /* SearchListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchListInteractorTests.swift; path = QuickMediaSearchTests/SearchListInteractorTests.swift; sourceTree = SOURCE_ROOT; };
 		2F69ABBB23E9084500F47E1C /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		2F69ABBD23E9088C00F47E1C /* MockKakaoServiceType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MockKakaoServiceType+.swift"; sourceTree = "<group>"; };
@@ -132,6 +138,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F4919B023EFD31300CCF43B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2F4919B123EFD31A00CCF43B /* NetworkRequestProtocol.swift */,
+				2F4919B323EFD34D00CCF43B /* URLRequests.swift */,
+				2F4919B723EFD37D00CCF43B /* HTTPMethod.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		2F95081D23E87D1E00629639 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +195,7 @@
 		2FB97E2523E8572D00CA3350 /* QuickMediaSearch */ = {
 			isa = PBXGroup;
 			children = (
+				2F4919B023EFD31300CCF43B /* Networking */,
 				2FAF6D2B23EAEA4F005F3867 /* .swiftlint.yml */,
 				2FAF6D3123EAF030005F3867 /* Genaral */,
 				2FB97E8E23E85D1300CA3350 /* Model */,
@@ -569,6 +586,7 @@
 				2F95082723E8835000629639 /* AppServices.swift in Sources */,
 				2FB97E5023E85AAE00CA3350 /* SearchListPresenter.swift in Sources */,
 				2FB97E9E23E85F0200CA3350 /* MyStoreViewController.swift in Sources */,
+				2F4919B423EFD34D00CCF43B /* URLRequests.swift in Sources */,
 				2FAF6D3323EAF03E005F3867 /* UIAlertControllerBuilder.swift in Sources */,
 				2FB97E4C23E85A7100CA3350 /* SearchListViewController.swift in Sources */,
 				2FB97E5E23E85B4900CA3350 /* KakaoService.swift in Sources */,
@@ -577,7 +595,9 @@
 				2FAF6D2A23EAE9AE005F3867 /* ThumbnailType.swift in Sources */,
 				2F95082523E880DE00629639 /* SearchListPresent.swift in Sources */,
 				2F95081A23E87A9800629639 /* Enviroment.swift in Sources */,
+				2F4919B223EFD31A00CCF43B /* NetworkRequestProtocol.swift in Sources */,
 				2FB97E4E23E85A9800CA3350 /* SearchListInteractor.swift in Sources */,
+				2F4919B823EFD37D00CCF43B /* HTTPMethod.swift in Sources */,
 				2FAF6D2823EAE982005F3867 /* Thumbnailable.swift in Sources */,
 				2FB97E5523E85AF300CA3350 /* DetailViewController.swift in Sources */,
 			);
