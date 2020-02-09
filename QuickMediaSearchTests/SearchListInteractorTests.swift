@@ -58,3 +58,99 @@ class StubSearchListPresentationLogic: SearchListPresentationLogic {
     func presentDetailViewController() {
     }
 }
+
+//
+//  MyStoreInteractorTests.swift
+//  QuickMediaSearchTests
+//
+//  Created by tyler on 2020/02/05.
+//  Copyright © 2020 Assin. All rights reserved.
+//
+//
+//import XCTest
+//import Cuckoo
+//@testable import QuickMediaSearch
+//
+//class MyStoreInteractorTests: XCTestCase {
+//
+//    var subject: MyStoreInteractor!
+//    var service: MockUserDefaultServiceType!
+//    var presenter: MockMyStorePresentationLogic!
+//
+//    override func setUp() {
+//        super.setUp()
+//        self.service = MockUserDefaultServiceType()
+//        self.service.withEnabledDefaultImplementation(MockUserDefaultServiceType())
+//        self.presenter = MockMyStorePresentationLogic()
+//        self.presenter.withEnabledDefaultImplementation(StubMyStorePresentationLogic())
+//
+//        self.subject = MyStoreInteractor(favoriteService: self.service, presenter: self.presenter)
+//    }
+//    override func tearDown() {
+//        super.tearDown()
+//    }
+////    func test_SuccessFetched_displaySection() {
+////        // Given
+////        let aa = [Thumbnailable]()
+////        self.service.fetchFavorites(result: Result.success(aa))
+////        // When
+////        self.subject.fetchFavorites()
+////        // Then
+////        verify(self.presenter).presentProgress(isShow: true)
+////        verify(self.presenter).presentFetchedFavorites()
+////        verify(self.presenter).presentProgress(isShow: false)
+////    }
+////
+////    func test_failureFetched_displaySection() {
+////        // Given
+////        self.service.fetchFavorites(result: Result.failure(TestError.error))
+////        // When
+////        self.subject.fetchFavorites()
+////        // Then
+////        verify(self.presenter).presentProgress(isShow: true)
+////        verify(self.presenter).presentAlert(any())
+////        verify(self.presenter).presentProgress(isShow: false)
+////    }
+//}
+//
+//class StubMyStorePresentationLogic: MyStorePresentationLogic {
+//    func presentProgress(isShow: Bool) {
+//    }
+//
+//    func presentAlert(_ alert: UIAlertControllerBuilder) {
+//    }
+//
+//    func presentFetchedFavorites() {
+//
+//    }
+//}
+//
+//class StubUserDefaultServiceType : UserDefaultServiceType {
+//    func isFavorite(_ thumbnail: Thumbnailable) -> Bool {
+//        return true
+//    }
+//
+//    func addFavorite(_ thumbnail: Thumbnailable) {
+//    }
+//
+//    func removeFavorite(_ thumbnail: Thumbnailable) {
+//    }
+//
+//    func fetchFavorites(result: @escaping (Result<[Thumbnailable], Error>) -> Void) {
+//    }
+//}
+//
+//import Cuckoo
+//@testable import QuickMediaSearch
+//
+//extension MockUserDefaultServiceType {
+//    @discardableResult
+//    func stubFetchFavorites(_ result: Result<[Thumbnailable], Error>) {
+//        stub(self, block: { mock in
+//            when(mock.fetchFavorites(result: any()))
+//                .then({ closure in
+//                    closure(result)
+//                })
+//        })
+//    }
+//}

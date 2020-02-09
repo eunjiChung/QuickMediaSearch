@@ -17,7 +17,10 @@ protocol KakaoServiceType {
      */
 }
 
-class KakaoService {
+class KakaoService: KakaoServiceType {
+    func fetchMedium(result: @escaping (Result<[Thumbnailable], Error>) -> Void) {
+    }
+    
     private func fetchImage(result: @escaping (Result<KakaoImageResponse, Error>) -> Void) {
         
     }
