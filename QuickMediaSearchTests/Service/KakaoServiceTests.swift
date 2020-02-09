@@ -20,6 +20,9 @@ class KakaoServiceTests: XCTestCase {
     }
     
     func test_두작업모두성공해야만_리스트를반환한다() {
+        // Given
+        // When
+        // Then
         let expectation = XCTestExpectation()
         subject.fetchMedium { result in
             switch result {
@@ -34,8 +37,11 @@ class KakaoServiceTests: XCTestCase {
     }
     func test_둘중하나의API요청이실패하면_실패로_간주한다() {
         let expectation = XCTestExpectation()
+        
+        // Given
+        // When
+        // Then
         subject.fetchMedium { result in
-            
             switch result {
             case .success(let data):
                 XCTFail("error 가 호출되면 안되다.")
