@@ -29,7 +29,7 @@ class SearchListViewController: UIViewController, SearchListDisplayLogic {
     init(service: AppServices) {
         super.init(nibName: nil, bundle: nil)
         let presenter = SearchListPresentation(view: self)
-        self.interactor = SearchListInteractor(service: service.kakaoService, presenter: presenter)
+        self.interactor = SearchListInteractor(useCase: service.kakaoUseCase, presenter: presenter)
         self.router = SearchListRouter(service: service, viewContoroller: self)
     }
     

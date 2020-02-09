@@ -12,18 +12,22 @@ protocol SearchListBusinessLogic {
     func fetchSearchList(query: String)
 }
 
+/*
+1. 둘중하나의 API 요청이 실패하면 실패로 간주한다.
+2. 두 작업 모두 성공해야만 리스트를 반환한다.
+*/
 class SearchListInteractor: SearchListBusinessLogic {
     
     private let presenter: SearchListPresentationLogic
-    private let service: KakaoServiceType
-    init(service: KakaoServiceType, presenter: SearchListPresentationLogic) {
+    private let useCase: KakaoUsecaseType
+    init(useCase: KakaoUsecaseType, presenter: SearchListPresentationLogic) {
         self.presenter = presenter
-        self.service = service
+        self.useCase = useCase
     }
     
     func fetchSearchList(query: String) {
         self.presenter.presentProgress(isShow: true)
-        self.service.fetchMedium { result in
+        self.useCase.fetchMedium { result in
             self.presenter.presentProgress(isShow: false)
             switch result {
             case .success(let thumbnails):

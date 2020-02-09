@@ -10,8 +10,10 @@
 		20E5F5C25271C6747F1C9B7C /* Pods_QuickMediaSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9174EACEF24CF259CCCEFD91 /* Pods_QuickMediaSearch.framework */; };
 		2F4919AF23EFD01400CCF43B /* KakaoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919AE23EFD01400CCF43B /* KakaoServiceTests.swift */; };
 		2F4919B223EFD31A00CCF43B /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919B123EFD31A00CCF43B /* NetworkRequestProtocol.swift */; };
-		2F4919B423EFD34D00CCF43B /* URLRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919B323EFD34D00CCF43B /* URLRequests.swift */; };
+		2F4919B423EFD34D00CCF43B /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919B323EFD34D00CCF43B /* Requests.swift */; };
 		2F4919B823EFD37D00CCF43B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919B723EFD37D00CCF43B /* HTTPMethod.swift */; };
+		2F4919BA23EFD86000CCF43B /* KakaoUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919B923EFD86000CCF43B /* KakaoUsecase.swift */; };
+		2F4919BC23EFDFC100CCF43B /* KakaoUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4919BB23EFDFC100CCF43B /* KakaoUsecaseTests.swift */; };
 		2F69ABBA23E9021B00F47E1C /* SearchListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69ABB923E9021B00F47E1C /* SearchListInteractorTests.swift */; };
 		2F69ABBC23E9084500F47E1C /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69ABBB23E9084500F47E1C /* TestError.swift */; };
 		2F69ABBE23E9088C00F47E1C /* MockKakaoServiceType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69ABBD23E9088C00F47E1C /* MockKakaoServiceType+.swift */; };
@@ -66,8 +68,10 @@
 /* Begin PBXFileReference section */
 		2F4919AE23EFD01400CCF43B /* KakaoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoServiceTests.swift; sourceTree = "<group>"; };
 		2F4919B123EFD31A00CCF43B /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
-		2F4919B323EFD34D00CCF43B /* URLRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequests.swift; sourceTree = "<group>"; };
+		2F4919B323EFD34D00CCF43B /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		2F4919B723EFD37D00CCF43B /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		2F4919B923EFD86000CCF43B /* KakaoUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoUsecase.swift; sourceTree = "<group>"; };
+		2F4919BB23EFDFC100CCF43B /* KakaoUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoUsecaseTests.swift; sourceTree = "<group>"; };
 		2F69ABB923E9021B00F47E1C /* SearchListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchListInteractorTests.swift; path = QuickMediaSearchTests/SearchListInteractorTests.swift; sourceTree = SOURCE_ROOT; };
 		2F69ABBB23E9084500F47E1C /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		2F69ABBD23E9088C00F47E1C /* MockKakaoServiceType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MockKakaoServiceType+.swift"; sourceTree = "<group>"; };
@@ -142,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				2F4919B123EFD31A00CCF43B /* NetworkRequestProtocol.swift */,
-				2F4919B323EFD34D00CCF43B /* URLRequests.swift */,
+				2F4919B323EFD34D00CCF43B /* Requests.swift */,
 				2F4919B723EFD37D00CCF43B /* HTTPMethod.swift */,
 			);
 			path = Networking;
@@ -168,6 +172,7 @@
 			children = (
 				2FAF6D3C23EAFE2E005F3867 /* UserDefaultServiceTests.swift */,
 				2F4919AE23EFD01400CCF43B /* KakaoServiceTests.swift */,
+				2F4919BB23EFDFC100CCF43B /* KakaoUsecaseTests.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 		2FB97E5C23E85B3A00CA3350 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2F4919B923EFD86000CCF43B /* KakaoUsecase.swift */,
 				2FB97E5D23E85B4900CA3350 /* KakaoService.swift */,
 				2FB97E5F23E85B5400CA3350 /* UserDefaultService.swift */,
 				2F95082623E8835000629639 /* AppServices.swift */,
@@ -503,7 +509,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/Mock.generated.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" --no-class-mocking \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Scene/SearchList/SearchListPresenter.swift\" \\\n\"${INPUT_DIR}/Scene/MyStore/MyStorePresenter.swift\" \\\n\"${INPUT_DIR}/Service/KakaoService.swift\" \n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/Mock.generated.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" --no-class-mocking \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Scene/SearchList/SearchListPresenter.swift\" \\\n\"${INPUT_DIR}/Scene/MyStore/MyStorePresenter.swift\" \\\n\"${INPUT_DIR}/Service/KakaoService.swift\" \\\n\"${INPUT_DIR}/Service/KakaoUsecase.swift\" \n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 		2F95082323E87DC900629639 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -583,10 +589,11 @@
 				2FB97E9C23E85F0200CA3350 /* MyStorePresenter.swift in Sources */,
 				2FB97E6023E85B5400CA3350 /* UserDefaultService.swift in Sources */,
 				2FB97E2723E8572D00CA3350 /* AppDelegate.swift in Sources */,
+				2F4919BA23EFD86000CCF43B /* KakaoUsecase.swift in Sources */,
 				2F95082723E8835000629639 /* AppServices.swift in Sources */,
 				2FB97E5023E85AAE00CA3350 /* SearchListPresenter.swift in Sources */,
 				2FB97E9E23E85F0200CA3350 /* MyStoreViewController.swift in Sources */,
-				2F4919B423EFD34D00CCF43B /* URLRequests.swift in Sources */,
+				2F4919B423EFD34D00CCF43B /* Requests.swift in Sources */,
 				2FAF6D3323EAF03E005F3867 /* UIAlertControllerBuilder.swift in Sources */,
 				2FB97E4C23E85A7100CA3350 /* SearchListViewController.swift in Sources */,
 				2FB97E5E23E85B4900CA3350 /* KakaoService.swift in Sources */,
@@ -610,6 +617,7 @@
 				2FAF6D3F23EB07AC005F3867 /* MyStoreInteractorTests.swift in Sources */,
 				2FAF6D3D23EAFE2E005F3867 /* UserDefaultServiceTests.swift in Sources */,
 				2FB97E8023E85C5600CA3350 /* ResourcesLoader.swift in Sources */,
+				2F4919BC23EFDFC100CCF43B /* KakaoUsecaseTests.swift in Sources */,
 				2F4919AF23EFD01400CCF43B /* KakaoServiceTests.swift in Sources */,
 				2FAF6D3023EAEC23005F3867 /* QuickFixture.swift in Sources */,
 				2F69ABBE23E9088C00F47E1C /* MockKakaoServiceType+.swift in Sources */,

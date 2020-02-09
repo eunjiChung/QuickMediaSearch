@@ -11,4 +11,8 @@ import Foundation
 struct AppServices {
     let kakaoService: KakaoServiceType
     let userDefaultService: UserDefaultServiceType
+    
+    var kakaoUseCase: KakaoUsecase {
+        return KakaoUsecase(service: self.kakaoService)
+    }
 }

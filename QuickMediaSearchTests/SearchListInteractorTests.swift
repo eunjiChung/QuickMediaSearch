@@ -12,22 +12,23 @@ import Cuckoo
 
 class SearchListInteractorTests: XCTestCase {
     var subject: SearchListInteractor!
-    var service: MockKakaoServiceType!
+    var useCase: MockKakaoUsecaseType!
+    
     var presenter: MockSearchListPresentationLogic!
     
     override func setUp() {
         super.setUp()
-        self.service = MockKakaoServiceType()
+        self.useCase = MockKakaoUsecaseType()
         self.presenter = MockSearchListPresentationLogic()
         self.presenter.withEnabledDefaultImplementation(StubSearchListPresentationLogic())
-        self.subject = SearchListInteractor(service: service, presenter: presenter)
+        self.subject = SearchListInteractor(useCase: useCase, presenter: presenter)
     }
     override func tearDown() {
         super.tearDown()
     }
     
     func test_successFetched_displaySection() {
-        self.service.stubFetchMedium(Result.success(QuickFixture.Sample.image.documents))
+        self.useCase.stubFetchMedium(Result.success(QuickFixture.Sample.image.documents))
         self.subject.fetchSearchList(query: "")
         // MARK: 순서를 보장하는 방법을 연구가 필요함.
         verify(self.presenter, times(1)).presentProgress(isShow: true)
@@ -36,7 +37,7 @@ class SearchListInteractorTests: XCTestCase {
     }
     
     func test_failureFetched_displaySection() {
-        self.service.stubFetchMedium(Result.failure(TestError.error))
+        self.useCase.stubFetchMedium(Result.failure(TestError.error))
         self.subject.fetchSearchList(query: "")
         // MARK: 순서를 보장하는 방법을 연구가 필요함.
         verify(self.presenter, times(1)).presentProgress(isShow: true)
