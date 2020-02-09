@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: QuickMediaSearch/Scene/MyStore/MyStorePresenter.swift at 2020-02-09 06:37:28 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Scene/MyStore/MyStorePresenter.swift at 2020-02-09 07:44:22 +0000
 
 //
 //  SearchListPresenter.swift
@@ -162,7 +162,7 @@ import Cuckoo
 }
 
 
-// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-09 06:37:28 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Scene/SearchList/SearchListPresenter.swift at 2020-02-09 07:44:22 +0000
 
 //
 //  SearchListPresenter.swift
@@ -358,7 +358,7 @@ import UIKit
 }
 
 
-// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-09 06:37:28 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoService.swift at 2020-02-09 07:44:22 +0000
 
 //
 //  KakaoService.swift
@@ -494,7 +494,7 @@ import Foundation
 }
 
 
-// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoUsecase.swift at 2020-02-09 06:37:28 +0000
+// MARK: - Mocks generated from file: QuickMediaSearch/Service/KakaoUsecase.swift at 2020-02-09 07:44:22 +0000
 
 //
 //  KakaoUsercase.swift

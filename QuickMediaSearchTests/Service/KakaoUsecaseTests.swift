@@ -22,6 +22,7 @@ class KakaoUsecaseTests: XCTestCase {
         super.setUp()
         service = MockKakaoServiceType()
         subject = KakaoUsecase(service: service)
+        print("@@@@@@@@@@@@@@@@@@@@@@@@@")
     }
 
     override func tearDown() {
@@ -30,26 +31,30 @@ class KakaoUsecaseTests: XCTestCase {
 
     func test_두작업모두성공해야만_리스트를반환한다() {
         // Given
-        // When
-        // Then
+        service.stubFetchImage(Result.success(QuickFixture.Sample.image))
+        service.stubFetchVclip(Result.success(QuickFixture.Sample.vclip))
         let expectation = XCTestExpectation()
+        // When
         subject.fetchMedium { result in
             switch result {
             case .success(let data):
-                XCTAssertTrue(true)
+//                XCTAssertTrue(true)
+                XCTAssertEqual(data.count, QuickFixture.Sample.image.documents.count + QuickFixture.Sample.vclip.documents.count)
             case .failure(let error):
                 XCTFail("error 가 호출되면 안되다.")
             }
             expectation.fulfill()
         }
+        // Then
         wait(for: [expectation], timeout: 0.1)
     }
     func test_둘중하나의API요청이실패하면_실패로_간주한다() {
         let expectation = XCTestExpectation()
 
         // Given
+        service.stubFetchImage(Result.failure(TestError.error))
+        service.stubFetchVclip(Result.success(QuickFixture.Sample.vclip))
         // When
-        // Then
         subject.fetchMedium { result in
             switch result {
             case .success(let data):
@@ -59,6 +64,8 @@ class KakaoUsecaseTests: XCTestCase {
             }
             expectation.fulfill()
         }
+        // Then
+        
         wait(for: [expectation], timeout: 0.1)
     }
 }

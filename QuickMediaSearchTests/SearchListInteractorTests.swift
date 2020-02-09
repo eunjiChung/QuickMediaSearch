@@ -37,7 +37,7 @@ class SearchListInteractorTests: XCTestCase {
     }
     
     func test_failureFetched_displaySection() {
-        self.useCase.stubFetchMedium(Result.failure(TestError.error))
+        self.useCase.stubFetchMedium(Result.failure(TestError.error)) //Result.failure(TestError.error) 기대값
         self.subject.fetchSearchList(query: "")
         // MARK: 순서를 보장하는 방법을 연구가 필요함.
         verify(self.presenter, times(1)).presentProgress(isShow: true)
