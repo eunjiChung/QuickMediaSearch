@@ -2,6 +2,7 @@
 # Created by https://www.gitignore.io/api/swift
 # Edit at https://www.gitignore.io/?templates=swift
 
+.DS_Store
 ### Swift ###
 # Xcode
 #
@@ -59,6 +60,7 @@ playground.xcworkspace
 # Carthage/Checkouts
 
 Carthage/Build
+Pods/
 
 # Accio dependency management
 Dependencies/
